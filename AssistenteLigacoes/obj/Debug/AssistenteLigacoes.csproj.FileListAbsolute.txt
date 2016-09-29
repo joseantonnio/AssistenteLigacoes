@@ -10,3 +10,5 @@ f:\documents\visual studio 2015\Projects\AssistenteLigacoes\AssistenteLigacoes\b
 f:\documents\visual studio 2015\Projects\AssistenteLigacoes\AssistenteLigacoes\obj\Debug\AssistenteLigacoes.FormAutenticacao.resources
 f:\documents\visual studio 2015\Projects\AssistenteLigacoes\AssistenteLigacoes\obj\Debug\AssistenteLigacoes.FormAutenticacao.pt-BR.resources
 f:\documents\visual studio 2015\Projects\AssistenteLigacoes\AssistenteLigacoes\obj\Debug\pt-BR\AssistenteLigacoes.resources.dll
+C:\Users\Vaio\Documents\Visual Studio 2015\Projects\AssistenteLigacoes\trunk\AssistenteLigacoes\bin\Debug\AssistenteLigacoes.exe.config
+C:\Users\Vaio\Documents\Visual Studio 2015\Projects\AssistenteLigacoes\trunk\AssistenteLigacoes\obj\Debug\AssistenteLigacoes.pdb

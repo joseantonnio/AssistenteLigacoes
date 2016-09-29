@@ -40,7 +40,7 @@ namespace AssistenteLigacoes
             else
             {
 
-                if (u == "admin" && p == "admin" && isadmin == false)
+                if (u == "user" && p == "user" && isadmin == false)
                 {
                     status.ForeColor = System.Drawing.Color.ForestGreen;
                     status.Text = "Entra como usuário...";
@@ -49,7 +49,7 @@ namespace AssistenteLigacoes
                 else
                 {
                     status.ForeColor = System.Drawing.Color.Firebrick;
-                    status.Text = "Usuário e senha incorretos. (User: admin | Pass: admin)";
+                    status.Text = "Usuário e senha incorretos.";
                     status.Visible = true;
                 }
 
