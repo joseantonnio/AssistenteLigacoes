@@ -66,5 +66,10 @@ namespace AssistenteLigacoes
         {
             isadmin = false;
         }
+
+        private void passlabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

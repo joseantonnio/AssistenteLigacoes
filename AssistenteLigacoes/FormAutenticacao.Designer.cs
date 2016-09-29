@@ -54,7 +54,7 @@
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.username.Location = new System.Drawing.Point(85, 15);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(246, 29);
+            this.username.Size = new System.Drawing.Size(262, 29);
             this.username.TabIndex = 1;
             // 
             // passlabel
@@ -67,6 +67,7 @@
             this.passlabel.Size = new System.Drawing.Size(60, 20);
             this.passlabel.TabIndex = 2;
             this.passlabel.Text = "Senha:";
+            this.passlabel.Click += new System.EventHandler(this.passlabel_Click);
             // 
             // password
             // 
@@ -74,7 +75,7 @@
             this.password.Location = new System.Drawing.Point(85, 63);
             this.password.Name = "password";
             this.password.PasswordChar = '•';
-            this.password.Size = new System.Drawing.Size(246, 29);
+            this.password.Size = new System.Drawing.Size(262, 29);
             this.password.TabIndex = 3;
             // 
             // userdefault
