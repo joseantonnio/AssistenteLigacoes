@@ -45,6 +45,8 @@ namespace AssistenteLigacoes
                     status.ForeColor = System.Drawing.Color.ForestGreen;
                     status.Text = "Entra como usuário...";
                     status.Visible = true;
+                    FormPrincipal Principal = new FormPrincipal();
+                    Principal.Show();
                 }
                 else
                 {
