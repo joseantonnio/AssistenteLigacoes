@@ -8,13 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Metroframework
+using MetroFramework.Forms;
+
 namespace AssistenteLigacoes
 {
-    public partial class FormPrincipal : Form
+    public partial class FormPrincipal : MetroForm
     {
         public FormPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

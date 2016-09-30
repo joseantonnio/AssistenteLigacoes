@@ -8,9 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Visual Metro
+using MetroFramework.Forms;
+
 namespace AssistenteLigacoes
 {
-    public partial class FormAutenticacao : Form
+    public partial class FormAutenticacao : MetroForm
     {
 
         private bool isadmin = false;
@@ -28,6 +31,32 @@ namespace AssistenteLigacoes
         private void entrar_Click(object sender, EventArgs e)
         {
 
+            
+
+        }
+
+        private void useradmin_CheckedChanged(object sender, EventArgs e)
+        {
+            isadmin = true;
+        }
+
+        private void userdefault_CheckedChanged(object sender, EventArgs e)
+        {
+            isadmin = false;
+        }
+
+        private void passlabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroProgressBar1_Click(object sender, EventArgs e)
+        {
+               
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
             string u = username.Text;
             string p = password.Text;
 
@@ -50,28 +79,12 @@ namespace AssistenteLigacoes
                 }
                 else
                 {
-                    status.ForeColor = System.Drawing.Color.Firebrick;
+                    status.ForeColor = System.Drawing.Color.OrangeRed;
                     status.Text = "Usuário e senha incorretos.";
                     status.Visible = true;
                 }
 
             }
-
-        }
-
-        private void useradmin_CheckedChanged(object sender, EventArgs e)
-        {
-            isadmin = true;
-        }
-
-        private void userdefault_CheckedChanged(object sender, EventArgs e)
-        {
-            isadmin = false;
-        }
-
-        private void passlabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
