@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
+            this.metroStyleExtender1 = new MetroFramework.Components.MetroStyleExtender(this.components);
             this.SuspendLayout();
             // 
             // FormPrincipal
@@ -40,11 +42,14 @@
             this.MaximizeBox = false;
             this.Name = "FormPrincipal";
             this.Text = "Assistente de Ligações";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormPrincipal_FormClosed);
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private MetroFramework.Components.MetroStyleExtender metroStyleExtender1;
     }
 }

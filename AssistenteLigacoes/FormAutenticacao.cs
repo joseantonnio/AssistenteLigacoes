@@ -76,6 +76,7 @@ namespace AssistenteLigacoes
                     status.Visible = true;
                     FormPrincipal Principal = new FormPrincipal();
                     Principal.Show();
+                    Hide();
                 }
                 else
                 {

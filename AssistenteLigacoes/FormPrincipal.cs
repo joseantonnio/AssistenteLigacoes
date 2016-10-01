@@ -24,5 +24,10 @@ namespace AssistenteLigacoes
         {
 
         }
+
+        private void FormPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Show();
+        }
     }
 }
