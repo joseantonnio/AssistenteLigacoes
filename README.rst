@@ -11,8 +11,17 @@ Objetivo
 
 A comunicação VOIP está cada vez mais comum na atualidade. Nossa proposta para a matéria de LP2 é desenvolver um 
 assistente para uma linha de telefone VOIP que auxiliará o usuário na identificação, gerenciamento e consulta de 
-todas as ligações feitas e/ou recebidas. A ideia é simples: sistemas VOIP armazenam todas as informações no banco 
-de dados, possibilitando assim o gerenciamento e consulta desses dados por sistemas externos.
+todas as ligações feitas e/ou recebidas. 
+
+Como funciona o VOIP
+--------------------
+
+Segundo a Wikipédia, VOIP (Voice over Internet Protocol)é o roteamento de conversação humana usando a Internet ou qualquer outra rede de computadores baseada no Protocolo de Internet, tornando a transmissão de voz mais um dos serviços suportados pela rede de dados.
+
+.. image:: https://raw.githubusercontent.com/joseantonnio/AssistenteLigacoes/master/COMO-FUNCIONA-VOIP.png
+  :align: center
+  
+Então nossa ideia é simples: sistemas VOIP armazenam todas as informações no banco de dados, possibilitando que nosso sistema realize todo o gerenciamento e consulta desses dados gerados pela rede VOIP interna.
 
 Estrutura das classes e métodos
 -------------------------------
