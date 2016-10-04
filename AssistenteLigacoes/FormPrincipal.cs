@@ -15,9 +15,12 @@ namespace AssistenteLigacoes
 {
     public partial class FormPrincipal : MetroForm
     {
-        public FormPrincipal()
+
+        private FormAutenticacao Autentica;
+        public FormPrincipal(FormAutenticacao Chamada)
         {
             InitializeComponent();
+            Autentica = Chamada;
         }
 
         private void FormPrincipal_Load(object sender, EventArgs e)
@@ -27,7 +30,15 @@ namespace AssistenteLigacoes
 
         private void FormPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Show();
+
+            Autentica.Show();
+            
         }
+
+        private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
     }
 }

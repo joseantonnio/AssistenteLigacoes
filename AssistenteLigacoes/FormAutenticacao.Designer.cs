@@ -36,7 +36,7 @@
             this.userdefault = new System.Windows.Forms.RadioButton();
             this.useradmin = new System.Windows.Forms.RadioButton();
             this.status = new System.Windows.Forms.Label();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.entrar = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // userlabel
@@ -67,7 +67,6 @@
             this.passlabel.Size = new System.Drawing.Size(60, 20);
             this.passlabel.TabIndex = 2;
             this.passlabel.Text = "Senha:";
-            this.passlabel.Click += new System.EventHandler(this.passlabel_Click);
             // 
             // password
             // 
@@ -115,23 +114,23 @@
             this.status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.status.Visible = false;
             // 
-            // metroButton1
+            // entrar
             // 
-            this.metroButton1.Location = new System.Drawing.Point(371, 155);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(78, 32);
-            this.metroButton1.Style = MetroFramework.MetroColorStyle.Orange;
-            this.metroButton1.TabIndex = 9;
-            this.metroButton1.Text = "Entrar";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            this.entrar.Location = new System.Drawing.Point(371, 155);
+            this.entrar.Name = "entrar";
+            this.entrar.Size = new System.Drawing.Size(78, 32);
+            this.entrar.Style = MetroFramework.MetroColorStyle.Orange;
+            this.entrar.TabIndex = 9;
+            this.entrar.Text = "Entrar";
+            this.entrar.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.entrar.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // FormAutenticacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(472, 218);
-            this.Controls.Add(this.metroButton1);
+            this.ClientSize = new System.Drawing.Size(472, 212);
+            this.Controls.Add(this.entrar);
             this.Controls.Add(this.status);
             this.Controls.Add(this.useradmin);
             this.Controls.Add(this.userdefault);
@@ -162,7 +161,7 @@
         private System.Windows.Forms.RadioButton userdefault;
         private System.Windows.Forms.RadioButton useradmin;
         private System.Windows.Forms.Label status;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton entrar;
     }
 }
 

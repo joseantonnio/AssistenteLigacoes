@@ -63,6 +63,16 @@ namespace AssistenteLigacoes.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap accept {
+            get {
+                object obj = ResourceManager.GetObject("accept", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap error {
             get {
                 object obj = ResourceManager.GetObject("error", resourceCulture);
@@ -76,6 +86,16 @@ namespace AssistenteLigacoes.Properties {
         internal static System.Drawing.Bitmap lock_unlock {
             get {
                 object obj = ResourceManager.GetObject("lock_unlock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UserAvatar {
+            get {
+                object obj = ResourceManager.GetObject("UserAvatar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

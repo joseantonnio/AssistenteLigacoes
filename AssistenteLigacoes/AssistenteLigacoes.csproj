@@ -118,6 +118,8 @@
     <None Include="Assets\ButtonIcons\error.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\UserAvatar.png" />
+    <None Include="Assets\ButtonIcons\accept.png" />
     <Content Include="icon.ico" />
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
