@@ -55,3 +55,16 @@ As saídas do software serão as seguintes:
 * Relatório de ligações de ramal: relatório com todas as ligações realizadas e recebidas por um ramal, com telefone de origem/destino, tempo de ligação, operadora, cidade e estado de origem/destino.
 
 * Relatório de ligações não atendidas: um relatório com todas as ligações não atendidas (tanto as realizadas como as recebidas) por um ramal, com telefone de origem/destino, operadora, cidade e estado de origem/destino e data/hora da ligação.
+
+Etapas do Projeto
+-----------------
+
+[X] Documentação no GitHub
+[X] Wireframe de classes
+[ ] Protótipo em CLI
+[ ] GUI (interface gráfica do usuário)
+[ ] Aplicação do protótipo no GUI
+[ ] Comunicação com banco de dados
+[ ] Build de testes
+[ ] Correções e ajustes
+[ ] Build final do projeto
