@@ -59,12 +59,12 @@ As saídas do software serão as seguintes:
 Etapas do Projeto
 -----------------
 
-[X] Documentação no GitHub
-[X] Wireframe de classes
-[ ] Protótipo em CLI
-[ ] GUI (interface gráfica do usuário)
-[ ] Aplicação do protótipo no GUI
-[ ] Comunicação com banco de dados
-[ ] Build de testes
-[ ] Correções e ajustes
-[ ] Build final do projeto
+* Documentação no GitHub - Concluído!
+* Wireframe de classes - Concluído!
+* Protótipo em CLI
+* GUI (interface gráfica do usuário)
+* Aplicação do protótipo no GUI
+* Comunicação com banco de dados
+* Build de testes
+* Correções e ajustes
+* Build final do projeto
