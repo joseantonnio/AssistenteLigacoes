@@ -30,15 +30,21 @@ namespace AssistenteLigacoes
 
         private void FormPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
-
             Autentica.Show();
-            
         }
 
-        private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult pergunta = MessageBox.Show("Você realmente deseja sair?", "Confirmação", MessageBoxButtons.YesNo);
+            if (pergunta == DialogResult.Yes)
+            {
+                Application.Exit();
+            }            
+        }
     }
 }
