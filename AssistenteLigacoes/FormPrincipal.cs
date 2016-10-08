@@ -79,5 +79,11 @@ namespace AssistenteLigacoes
             RelatorioChamadas Chamadas = new RelatorioChamadas();
             Chamadas.Show();
         }
+
+        private void ligaçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RelatorioChamadas Chamadas = new RelatorioChamadas();
+            Chamadas.Show();
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace AssistenteLigacoes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAutenticacao());
+            Application.Run(new RelatorioChamadas());
         }
     }
 }
