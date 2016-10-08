@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-// Visual Metro
+// MetroFramework
 using MetroFramework.Forms;
 
 namespace AssistenteLigacoes
@@ -16,26 +16,25 @@ namespace AssistenteLigacoes
     public partial class FormAutenticacao : MetroForm
     {
 
-        private bool isadmin = false;
+        // Declara uma variavel para verificar se o usuário é admin ou não
+        private bool isAdmin = false;
 
         public FormAutenticacao()
         {
+            // Inicializa o FormAutenticacao
             InitializeComponent();
-        }
-
-        private void FormAutenticacao_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void useradmin_CheckedChanged(object sender, EventArgs e)
         {
-            isadmin = true;
+            // Altera a variavel isAdmin para verdadeiro
+            isAdmin = true;
         }
 
         private void userdefault_CheckedChanged(object sender, EventArgs e)
         {
-            isadmin = false;
+            // Altera a variavel isAdmin para falso
+            isAdmin = false;
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -46,7 +45,7 @@ namespace AssistenteLigacoes
             string p = password.Text;
 
             // Verifica se o usuário passa na autenticação
-            if (u == "admin" && p == "admin" && isadmin == true)
+            if (u == "admin" && p == "admin" && isAdmin == true)
             {
 
                 // Troca a cor, informa que logou como admin e exibe
@@ -59,7 +58,7 @@ namespace AssistenteLigacoes
             {
 
                 // Verifica se é um usuário comum
-                if (u == "user" && p == "user" && isadmin == false)
+                if (u == "user" && p == "user" && isAdmin == false)
                 {
 
                     // Limpa o usuário e senha
@@ -89,5 +88,6 @@ namespace AssistenteLigacoes
 
             }
         }
+
     }
 }

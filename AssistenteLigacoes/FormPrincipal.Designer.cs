@@ -32,46 +32,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.atendimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.disponívelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.emAtendimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ausenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pausaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
-            this.inserirObservaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarSuasObservaçoesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ligaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.todasChamadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chamadasAtendidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chamadasPerdidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chamadasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.geralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chamadasRealizadasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.ramaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acessosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.todosRamaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ramalEspecíficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
-            this.observaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.backupToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.restaurarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilizadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarAvatarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combostatus = new System.Windows.Forms.ComboBox();
             this.labelstatus = new System.Windows.Forms.Label();
             this.statusatual = new System.Windows.Forms.Label();
-            this.alterarstatus = new System.Windows.Forms.Button();
-            this.avatarusuario = new System.Windows.Forms.PictureBox();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
@@ -92,13 +63,42 @@
             this.labelcidade = new System.Windows.Forms.Label();
             this.labeldestino = new System.Windows.Forms.Label();
             this.labeltipo = new System.Windows.Forms.Label();
+            this.alterarstatus = new System.Windows.Forms.Button();
+            this.avatarusuario = new System.Windows.Forms.PictureBox();
+            this.alterarStatusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disponívelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.emAtendimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ausenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pausaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inserirObservaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ligaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.todasChamadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chamadasAtendidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chamadasPerdidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chamadasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.geralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chamadasRealizadasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.ramaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acessosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.todosRamaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ramalEspecíficoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.observaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backupToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.restaurarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarAvatarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.avatarusuario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarusuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -128,57 +128,10 @@
             this.atendimentoToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
             this.atendimentoToolStripMenuItem.Text = "Atendimento";
             // 
-            // alterarStatusToolStripMenuItem
-            // 
-            this.alterarStatusToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.disponívelToolStripMenuItem,
-            this.emAtendimentoToolStripMenuItem,
-            this.ausenteToolStripMenuItem,
-            this.pausaToolStripMenuItem});
-            this.alterarStatusToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.traffic;
-            this.alterarStatusToolStripMenuItem.Name = "alterarStatusToolStripMenuItem";
-            this.alterarStatusToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.alterarStatusToolStripMenuItem.Text = "Alterar status";
-            // 
-            // disponívelToolStripMenuItem
-            // 
-            this.disponívelToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.status_online;
-            this.disponívelToolStripMenuItem.Name = "disponívelToolStripMenuItem";
-            this.disponívelToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.disponívelToolStripMenuItem.Text = "Disponível";
-            // 
-            // emAtendimentoToolStripMenuItem
-            // 
-            this.emAtendimentoToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.user_business_boss;
-            this.emAtendimentoToolStripMenuItem.Name = "emAtendimentoToolStripMenuItem";
-            this.emAtendimentoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.emAtendimentoToolStripMenuItem.Text = "Em atendimento";
-            // 
-            // ausenteToolStripMenuItem
-            // 
-            this.ausenteToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.wait;
-            this.ausenteToolStripMenuItem.Name = "ausenteToolStripMenuItem";
-            this.ausenteToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.ausenteToolStripMenuItem.Text = "Ausente";
-            // 
-            // pausaToolStripMenuItem
-            // 
-            this.pausaToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.stop;
-            this.pausaToolStripMenuItem.Name = "pausaToolStripMenuItem";
-            this.pausaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.pausaToolStripMenuItem.Text = "Pausa";
-            // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(166, 6);
-            // 
-            // inserirObservaçãoToolStripMenuItem
-            // 
-            this.inserirObservaçãoToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.comment;
-            this.inserirObservaçãoToolStripMenuItem.Name = "inserirObservaçãoToolStripMenuItem";
-            this.inserirObservaçãoToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.inserirObservaçãoToolStripMenuItem.Text = "Inserir observação";
             // 
             // consultarSuasObservaçoesToolStripMenuItem
             // 
@@ -191,14 +144,6 @@
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
             this.toolStripMenuItem5.Size = new System.Drawing.Size(166, 6);
             // 
-            // logoutToolStripMenuItem
-            // 
-            this.logoutToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.disconnect;
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.logoutToolStripMenuItem.Text = "Logout";
-            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
-            // 
             // relatóriosToolStripMenuItem
             // 
             this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -209,114 +154,10 @@
             this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             // 
-            // ligaçõesToolStripMenuItem
-            // 
-            this.ligaçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.todasChamadasToolStripMenuItem,
-            this.chamadasAtendidasToolStripMenuItem,
-            this.chamadasPerdidasToolStripMenuItem,
-            this.chamadasRealizadasToolStripMenuItem});
-            this.ligaçõesToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.telephone;
-            this.ligaçõesToolStripMenuItem.Name = "ligaçõesToolStripMenuItem";
-            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.ligaçõesToolStripMenuItem.Text = "Ramal";
-            // 
-            // todasChamadasToolStripMenuItem
-            // 
-            this.todasChamadasToolStripMenuItem.Name = "todasChamadasToolStripMenuItem";
-            this.todasChamadasToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.todasChamadasToolStripMenuItem.Text = "Todas chamadas";
-            // 
-            // chamadasAtendidasToolStripMenuItem
-            // 
-            this.chamadasAtendidasToolStripMenuItem.Name = "chamadasAtendidasToolStripMenuItem";
-            this.chamadasAtendidasToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.chamadasAtendidasToolStripMenuItem.Text = "Chamadas atendidas";
-            // 
-            // chamadasPerdidasToolStripMenuItem
-            // 
-            this.chamadasPerdidasToolStripMenuItem.Name = "chamadasPerdidasToolStripMenuItem";
-            this.chamadasPerdidasToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.chamadasPerdidasToolStripMenuItem.Text = "Chamadas perdidas";
-            // 
-            // chamadasRealizadasToolStripMenuItem
-            // 
-            this.chamadasRealizadasToolStripMenuItem.Name = "chamadasRealizadasToolStripMenuItem";
-            this.chamadasRealizadasToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.chamadasRealizadasToolStripMenuItem.Text = "Chamadas realizadas";
-            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // geralToolStripMenuItem
-            // 
-            this.geralToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.chamadasRealizadasToolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.ramaisToolStripMenuItem,
-            this.acessosToolStripMenuItem,
-            this.toolStripMenuItem3,
-            this.observaçõesToolStripMenuItem,
-            this.statusToolStripMenuItem});
-            this.geralToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.user_business_boss;
-            this.geralToolStripMenuItem.Name = "geralToolStripMenuItem";
-            this.geralToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.geralToolStripMenuItem.Text = "Administração";
-            // 
-            // chamadasRealizadasToolStripMenuItem1
-            // 
-            this.chamadasRealizadasToolStripMenuItem1.Image = global::AssistenteLigacoes.Properties.Resources.report;
-            this.chamadasRealizadasToolStripMenuItem1.Name = "chamadasRealizadasToolStripMenuItem1";
-            this.chamadasRealizadasToolStripMenuItem1.Size = new System.Drawing.Size(163, 22);
-            this.chamadasRealizadasToolStripMenuItem1.Text = "Chamadas";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(160, 6);
-            // 
-            // ramaisToolStripMenuItem
-            // 
-            this.ramaisToolStripMenuItem.Name = "ramaisToolStripMenuItem";
-            this.ramaisToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.ramaisToolStripMenuItem.Text = "Consultar ramais";
-            // 
-            // acessosToolStripMenuItem
-            // 
-            this.acessosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.todosRamaisToolStripMenuItem,
-            this.ramalEspecíficoToolStripMenuItem});
-            this.acessosToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.lock_unlock;
-            this.acessosToolStripMenuItem.Name = "acessosToolStripMenuItem";
-            this.acessosToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.acessosToolStripMenuItem.Text = "Acessos";
-            // 
-            // todosRamaisToolStripMenuItem
-            // 
-            this.todosRamaisToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.group;
-            this.todosRamaisToolStripMenuItem.Name = "todosRamaisToolStripMenuItem";
-            this.todosRamaisToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.todosRamaisToolStripMenuItem.Text = "Todos ramais";
-            // 
-            // ramalEspecíficoToolStripMenuItem
-            // 
-            this.ramalEspecíficoToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.user;
-            this.ramalEspecíficoToolStripMenuItem.Name = "ramalEspecíficoToolStripMenuItem";
-            this.ramalEspecíficoToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.ramalEspecíficoToolStripMenuItem.Text = "Ramal específico";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(160, 6);
-            // 
-            // observaçõesToolStripMenuItem
-            // 
-            this.observaçõesToolStripMenuItem.Name = "observaçõesToolStripMenuItem";
-            this.observaçõesToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.observaçõesToolStripMenuItem.Text = "Observações";
             // 
             // ajudaToolStripMenuItem
             // 
@@ -327,37 +168,6 @@
             this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
             // 
-            // sobreToolStripMenuItem
-            // 
-            this.sobreToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.exclamation;
-            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.sobreToolStripMenuItem.Text = "Sobre";
-            // 
-            // backupToolStripMenuItem
-            // 
-            this.backupToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.backupToolStripMenuItem1,
-            this.restaurarToolStripMenuItem});
-            this.backupToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.safe;
-            this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.backupToolStripMenuItem.Text = "Segurança";
-            // 
-            // backupToolStripMenuItem1
-            // 
-            this.backupToolStripMenuItem1.Image = global::AssistenteLigacoes.Properties.Resources.drive_disk;
-            this.backupToolStripMenuItem1.Name = "backupToolStripMenuItem1";
-            this.backupToolStripMenuItem1.Size = new System.Drawing.Size(123, 22);
-            this.backupToolStripMenuItem1.Text = "Backup";
-            // 
-            // restaurarToolStripMenuItem
-            // 
-            this.restaurarToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.drive_go;
-            this.restaurarToolStripMenuItem.Name = "restaurarToolStripMenuItem";
-            this.restaurarToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-            this.restaurarToolStripMenuItem.Text = "Restaurar";
-            // 
             // utilizadorToolStripMenuItem
             // 
             this.utilizadorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -365,13 +175,6 @@
             this.utilizadorToolStripMenuItem.Name = "utilizadorToolStripMenuItem";
             this.utilizadorToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             this.utilizadorToolStripMenuItem.Text = "Configurações";
-            // 
-            // alterarAvatarToolStripMenuItem
-            // 
-            this.alterarAvatarToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.photo;
-            this.alterarAvatarToolStripMenuItem.Name = "alterarAvatarToolStripMenuItem";
-            this.alterarAvatarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.alterarAvatarToolStripMenuItem.Text = "Alterar avatar";
             // 
             // sairToolStripMenuItem
             // 
@@ -393,6 +196,7 @@
             this.combostatus.Name = "combostatus";
             this.combostatus.Size = new System.Drawing.Size(186, 28);
             this.combostatus.TabIndex = 2;
+            this.combostatus.Text = "Selecione...";
             // 
             // labelstatus
             // 
@@ -415,24 +219,6 @@
             this.statusatual.TabIndex = 5;
             this.statusatual.Text = "Status.Atual";
             // 
-            // alterarstatus
-            // 
-            this.alterarstatus.Image = global::AssistenteLigacoes.Properties.Resources.accept;
-            this.alterarstatus.Location = new System.Drawing.Point(506, 153);
-            this.alterarstatus.Name = "alterarstatus";
-            this.alterarstatus.Size = new System.Drawing.Size(34, 28);
-            this.alterarstatus.TabIndex = 4;
-            this.alterarstatus.UseVisualStyleBackColor = true;
-            // 
-            // avatarusuario
-            // 
-            this.avatarusuario.Image = global::AssistenteLigacoes.Properties.Resources.UserAvatar;
-            this.avatarusuario.Location = new System.Drawing.Point(23, 99);
-            this.avatarusuario.Name = "avatarusuario";
-            this.avatarusuario.Size = new System.Drawing.Size(98, 95);
-            this.avatarusuario.TabIndex = 1;
-            this.avatarusuario.TabStop = false;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -449,7 +235,6 @@
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.numerotelefone);
             this.tabPage1.Controls.Add(this.labelresponsavel);
-            this.tabPage1.Controls.Add(this.labellogin);
             this.tabPage1.Controls.Add(this.labelramal);
             this.tabPage1.Controls.Add(this.labeltelefone);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -505,11 +290,12 @@
             this.labellogin.AutoSize = true;
             this.labellogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labellogin.ForeColor = System.Drawing.Color.SteelBlue;
-            this.labellogin.Location = new System.Drawing.Point(6, 90);
+            this.labellogin.Location = new System.Drawing.Point(224, 353);
             this.labellogin.Name = "labellogin";
-            this.labellogin.Size = new System.Drawing.Size(331, 18);
+            this.labellogin.Size = new System.Drawing.Size(315, 18);
             this.labellogin.TabIndex = 2;
-            this.labellogin.Text = "Atendimento iniciado em %d de %m de %y.";
+            this.labellogin.Text = "Ramal autenticado em %d de %m de %y.";
+            this.labellogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelramal
             // 
@@ -651,21 +437,238 @@
             this.labeltipo.TabIndex = 7;
             this.labeltipo.Text = "Tipo:";
             // 
+            // alterarstatus
+            // 
+            this.alterarstatus.Image = global::AssistenteLigacoes.Properties.Resources.accept;
+            this.alterarstatus.Location = new System.Drawing.Point(506, 153);
+            this.alterarstatus.Name = "alterarstatus";
+            this.alterarstatus.Size = new System.Drawing.Size(34, 28);
+            this.alterarstatus.TabIndex = 4;
+            this.alterarstatus.UseVisualStyleBackColor = true;
+            // 
+            // avatarusuario
+            // 
+            this.avatarusuario.Image = global::AssistenteLigacoes.Properties.Resources.UserAvatar;
+            this.avatarusuario.Location = new System.Drawing.Point(23, 99);
+            this.avatarusuario.Name = "avatarusuario";
+            this.avatarusuario.Size = new System.Drawing.Size(98, 95);
+            this.avatarusuario.TabIndex = 1;
+            this.avatarusuario.TabStop = false;
+            // 
+            // alterarStatusToolStripMenuItem
+            // 
+            this.alterarStatusToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.disponívelToolStripMenuItem,
+            this.emAtendimentoToolStripMenuItem,
+            this.ausenteToolStripMenuItem,
+            this.pausaToolStripMenuItem});
+            this.alterarStatusToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.traffic;
+            this.alterarStatusToolStripMenuItem.Name = "alterarStatusToolStripMenuItem";
+            this.alterarStatusToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.alterarStatusToolStripMenuItem.Text = "Alterar status";
+            // 
+            // disponívelToolStripMenuItem
+            // 
+            this.disponívelToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.status_online;
+            this.disponívelToolStripMenuItem.Name = "disponívelToolStripMenuItem";
+            this.disponívelToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.disponívelToolStripMenuItem.Text = "Disponível";
+            // 
+            // emAtendimentoToolStripMenuItem
+            // 
+            this.emAtendimentoToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.user_business_boss;
+            this.emAtendimentoToolStripMenuItem.Name = "emAtendimentoToolStripMenuItem";
+            this.emAtendimentoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.emAtendimentoToolStripMenuItem.Text = "Em atendimento";
+            // 
+            // ausenteToolStripMenuItem
+            // 
+            this.ausenteToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.wait;
+            this.ausenteToolStripMenuItem.Name = "ausenteToolStripMenuItem";
+            this.ausenteToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.ausenteToolStripMenuItem.Text = "Ausente";
+            // 
+            // pausaToolStripMenuItem
+            // 
+            this.pausaToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.stop;
+            this.pausaToolStripMenuItem.Name = "pausaToolStripMenuItem";
+            this.pausaToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.pausaToolStripMenuItem.Text = "Pausa";
+            // 
+            // inserirObservaçãoToolStripMenuItem
+            // 
+            this.inserirObservaçãoToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.comment;
+            this.inserirObservaçãoToolStripMenuItem.Name = "inserirObservaçãoToolStripMenuItem";
+            this.inserirObservaçãoToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.inserirObservaçãoToolStripMenuItem.Text = "Inserir observação";
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.disconnect;
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            // 
+            // ligaçõesToolStripMenuItem
+            // 
+            this.ligaçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.todasChamadasToolStripMenuItem,
+            this.chamadasAtendidasToolStripMenuItem,
+            this.chamadasPerdidasToolStripMenuItem,
+            this.chamadasRealizadasToolStripMenuItem});
+            this.ligaçõesToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.telephone;
+            this.ligaçõesToolStripMenuItem.Name = "ligaçõesToolStripMenuItem";
+            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ligaçõesToolStripMenuItem.Text = "Ramal";
+            // 
+            // todasChamadasToolStripMenuItem
+            // 
+            this.todasChamadasToolStripMenuItem.Name = "todasChamadasToolStripMenuItem";
+            this.todasChamadasToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.todasChamadasToolStripMenuItem.Text = "Todas chamadas";
+            // 
+            // chamadasAtendidasToolStripMenuItem
+            // 
+            this.chamadasAtendidasToolStripMenuItem.Name = "chamadasAtendidasToolStripMenuItem";
+            this.chamadasAtendidasToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.chamadasAtendidasToolStripMenuItem.Text = "Chamadas atendidas";
+            // 
+            // chamadasPerdidasToolStripMenuItem
+            // 
+            this.chamadasPerdidasToolStripMenuItem.Name = "chamadasPerdidasToolStripMenuItem";
+            this.chamadasPerdidasToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.chamadasPerdidasToolStripMenuItem.Text = "Chamadas perdidas";
+            // 
+            // chamadasRealizadasToolStripMenuItem
+            // 
+            this.chamadasRealizadasToolStripMenuItem.Name = "chamadasRealizadasToolStripMenuItem";
+            this.chamadasRealizadasToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.chamadasRealizadasToolStripMenuItem.Text = "Chamadas realizadas";
+            // 
+            // geralToolStripMenuItem
+            // 
+            this.geralToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chamadasRealizadasToolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.ramaisToolStripMenuItem,
+            this.acessosToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.observaçõesToolStripMenuItem,
+            this.statusToolStripMenuItem});
+            this.geralToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.user_business_boss;
+            this.geralToolStripMenuItem.Name = "geralToolStripMenuItem";
+            this.geralToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.geralToolStripMenuItem.Text = "Administração";
+            // 
+            // chamadasRealizadasToolStripMenuItem1
+            // 
+            this.chamadasRealizadasToolStripMenuItem1.Image = global::AssistenteLigacoes.Properties.Resources.report;
+            this.chamadasRealizadasToolStripMenuItem1.Name = "chamadasRealizadasToolStripMenuItem1";
+            this.chamadasRealizadasToolStripMenuItem1.Size = new System.Drawing.Size(163, 22);
+            this.chamadasRealizadasToolStripMenuItem1.Text = "Chamadas";
+            this.chamadasRealizadasToolStripMenuItem1.Click += new System.EventHandler(this.chamadasRealizadasToolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(160, 6);
+            // 
+            // ramaisToolStripMenuItem
+            // 
+            this.ramaisToolStripMenuItem.Name = "ramaisToolStripMenuItem";
+            this.ramaisToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.ramaisToolStripMenuItem.Text = "Consultar ramais";
+            // 
+            // acessosToolStripMenuItem
+            // 
+            this.acessosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.todosRamaisToolStripMenuItem,
+            this.ramalEspecíficoToolStripMenuItem});
+            this.acessosToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.lock_unlock;
+            this.acessosToolStripMenuItem.Name = "acessosToolStripMenuItem";
+            this.acessosToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.acessosToolStripMenuItem.Text = "Acessos";
+            // 
+            // todosRamaisToolStripMenuItem
+            // 
+            this.todosRamaisToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.group;
+            this.todosRamaisToolStripMenuItem.Name = "todosRamaisToolStripMenuItem";
+            this.todosRamaisToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.todosRamaisToolStripMenuItem.Text = "Todos ramais";
+            // 
+            // ramalEspecíficoToolStripMenuItem
+            // 
+            this.ramalEspecíficoToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.user;
+            this.ramalEspecíficoToolStripMenuItem.Name = "ramalEspecíficoToolStripMenuItem";
+            this.ramalEspecíficoToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.ramalEspecíficoToolStripMenuItem.Text = "Ramal específico";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(160, 6);
+            // 
+            // observaçõesToolStripMenuItem
+            // 
+            this.observaçõesToolStripMenuItem.Name = "observaçõesToolStripMenuItem";
+            this.observaçõesToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.observaçõesToolStripMenuItem.Text = "Observações";
+            // 
             // statusToolStripMenuItem
             // 
             this.statusToolStripMenuItem.Name = "statusToolStripMenuItem";
             this.statusToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.statusToolStripMenuItem.Text = "Status";
             // 
+            // sobreToolStripMenuItem
+            // 
+            this.sobreToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.exclamation;
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.sobreToolStripMenuItem.Text = "Sobre";
+            // 
+            // backupToolStripMenuItem
+            // 
+            this.backupToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backupToolStripMenuItem1,
+            this.restaurarToolStripMenuItem});
+            this.backupToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.safe;
+            this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.backupToolStripMenuItem.Text = "Segurança";
+            // 
+            // backupToolStripMenuItem1
+            // 
+            this.backupToolStripMenuItem1.Image = global::AssistenteLigacoes.Properties.Resources.drive_disk;
+            this.backupToolStripMenuItem1.Name = "backupToolStripMenuItem1";
+            this.backupToolStripMenuItem1.Size = new System.Drawing.Size(123, 22);
+            this.backupToolStripMenuItem1.Text = "Backup";
+            // 
+            // restaurarToolStripMenuItem
+            // 
+            this.restaurarToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.drive_go;
+            this.restaurarToolStripMenuItem.Name = "restaurarToolStripMenuItem";
+            this.restaurarToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.restaurarToolStripMenuItem.Text = "Restaurar";
+            // 
+            // alterarAvatarToolStripMenuItem
+            // 
+            this.alterarAvatarToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.photo;
+            this.alterarAvatarToolStripMenuItem.Name = "alterarAvatarToolStripMenuItem";
+            this.alterarAvatarToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.alterarAvatarToolStripMenuItem.Text = "Alterar avatar";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 360);
+            this.ClientSize = new System.Drawing.Size(562, 391);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusatual);
             this.Controls.Add(this.alterarstatus);
             this.Controls.Add(this.labelstatus);
+            this.Controls.Add(this.labellogin);
             this.Controls.Add(this.combostatus);
             this.Controls.Add(this.avatarusuario);
             this.Controls.Add(this.menuStrip1);
@@ -679,13 +682,13 @@
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.avatarusuario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.avatarusuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
