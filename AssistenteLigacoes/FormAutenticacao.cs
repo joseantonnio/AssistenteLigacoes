@@ -89,5 +89,9 @@ namespace AssistenteLigacoes
             }
         }
 
+        private void FormAutenticacao_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

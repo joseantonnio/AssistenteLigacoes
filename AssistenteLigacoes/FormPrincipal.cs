@@ -35,7 +35,7 @@ namespace AssistenteLigacoes
         {
 
             // Aqui vai chamar os metodos de login e etc
-            //
+            labellogin.Text = "Ramal autenticado em " + DateTime.Now.ToLongDateString() + ".";
 
         }
 

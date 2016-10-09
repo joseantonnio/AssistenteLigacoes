@@ -209,14 +209,14 @@
             // 
             this.ligaçõesToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.telephone;
             this.ligaçõesToolStripMenuItem.Name = "ligaçõesToolStripMenuItem";
-            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.ligaçõesToolStripMenuItem.Text = "Chamadas";
             this.ligaçõesToolStripMenuItem.Click += new System.EventHandler(this.ligaçõesToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(148, 6);
             // 
             // geralToolStripMenuItem
             // 
@@ -230,7 +230,7 @@
             this.statusToolStripMenuItem});
             this.geralToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.user_business_boss;
             this.geralToolStripMenuItem.Name = "geralToolStripMenuItem";
-            this.geralToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.geralToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.geralToolStripMenuItem.Text = "Administração";
             // 
             // chamadasRealizadasToolStripMenuItem1
@@ -599,12 +599,12 @@
             // 
             // labellogin
             // 
-            this.labellogin.AutoSize = true;
+            this.labellogin.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labellogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labellogin.ForeColor = System.Drawing.Color.SteelBlue;
-            this.labellogin.Location = new System.Drawing.Point(224, 353);
+            this.labellogin.Location = new System.Drawing.Point(20, 353);
             this.labellogin.Name = "labellogin";
-            this.labellogin.Size = new System.Drawing.Size(315, 18);
+            this.labellogin.Size = new System.Drawing.Size(522, 18);
             this.labellogin.TabIndex = 2;
             this.labellogin.Text = "Ramal autenticado em %d de %m de %y.";
             this.labellogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

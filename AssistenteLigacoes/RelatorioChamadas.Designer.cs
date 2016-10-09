@@ -30,11 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RelatorioChamadas));
             this.conteudorelatorio = new System.Windows.Forms.DataGridView();
-            this.origem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.destino = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tempo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.operadora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cidadeorigem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.operadoradestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cidadedestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelramal = new System.Windows.Forms.Label();
             this.ramalconsulta = new System.Windows.Forms.MaskedTextBox();
@@ -56,29 +54,24 @@
             // 
             // conteudorelatorio
             // 
+            this.conteudorelatorio.AllowUserToAddRows = false;
+            this.conteudorelatorio.AllowUserToDeleteRows = false;
             this.conteudorelatorio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.conteudorelatorio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.conteudorelatorio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.conteudorelatorio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.origem,
             this.destino,
             this.tempo,
-            this.operadora,
-            this.cidadeorigem,
+            this.operadoradestino,
             this.cidadedestino});
             this.conteudorelatorio.Location = new System.Drawing.Point(20, 110);
             this.conteudorelatorio.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.conteudorelatorio.Name = "conteudorelatorio";
+            this.conteudorelatorio.ReadOnly = true;
             this.conteudorelatorio.Size = new System.Drawing.Size(1014, 398);
             this.conteudorelatorio.TabIndex = 0;
-            // 
-            // origem
-            // 
-            this.origem.HeaderText = "Origem";
-            this.origem.Name = "origem";
-            this.origem.Width = 120;
             // 
             // destino
             // 
@@ -92,17 +85,11 @@
             this.tempo.Name = "tempo";
             this.tempo.Width = 150;
             // 
-            // operadora
+            // operadoradestino
             // 
-            this.operadora.HeaderText = "Operadora";
-            this.operadora.Name = "operadora";
-            this.operadora.Width = 200;
-            // 
-            // cidadeorigem
-            // 
-            this.cidadeorigem.HeaderText = "Cidade de Origem";
-            this.cidadeorigem.Name = "cidadeorigem";
-            this.cidadeorigem.Width = 250;
+            this.operadoradestino.HeaderText = "Operadora de Destino";
+            this.operadoradestino.Name = "operadoradestino";
+            this.operadoradestino.Width = 200;
             // 
             // cidadedestino
             // 
@@ -221,6 +208,7 @@
             // 
             // relatoriobuscar
             // 
+            this.relatoriobuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.relatoriobuscar.Image = global::AssistenteLigacoes.Properties.Resources.accept;
             this.relatoriobuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.relatoriobuscar.Location = new System.Drawing.Point(972, 63);
@@ -234,19 +222,21 @@
             // 
             // salvarelatorio
             // 
+            this.salvarelatorio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.salvarelatorio.Image = global::AssistenteLigacoes.Properties.Resources.page_excel;
             this.salvarelatorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.salvarelatorio.Location = new System.Drawing.Point(20, 514);
             this.salvarelatorio.Name = "salvarelatorio";
-            this.salvarelatorio.Size = new System.Drawing.Size(65, 30);
+            this.salvarelatorio.Size = new System.Drawing.Size(73, 30);
             this.salvarelatorio.TabIndex = 12;
-            this.salvarelatorio.Text = "Salvar";
+            this.salvarelatorio.Text = "Exportar";
             this.salvarelatorio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.salvarelatorio.UseVisualStyleBackColor = true;
             this.salvarelatorio.Click += new System.EventHandler(this.salvarelatorio_Click);
             // 
             // imprimerelatorio
             // 
+            this.imprimerelatorio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.imprimerelatorio.Image = global::AssistenteLigacoes.Properties.Resources.printer;
             this.imprimerelatorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.imprimerelatorio.Location = new System.Drawing.Point(969, 514);
@@ -262,6 +252,7 @@
             // 
             this.printrelatorio.DocumentName = "Relatorio";
             this.printrelatorio.BeginPrint += new System.Drawing.Printing.PrintEventHandler(this.printrelatorio_BeginPrint);
+            this.printrelatorio.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printrelatorio_PrintPage);
             // 
             // previewrelatorio
             // 
@@ -293,6 +284,7 @@
             this.Controls.Add(this.ramalconsulta);
             this.Controls.Add(this.labelramal);
             this.Controls.Add(this.conteudorelatorio);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1060, 550);
             this.Name = "RelatorioChamadas";
             this.Text = "Relatorio de Chamadas";
@@ -317,15 +309,13 @@
         private System.Windows.Forms.MonthCalendar calendariode;
         private System.Windows.Forms.MonthCalendar calendarioate;
         private System.Windows.Forms.Button relatoriobuscar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn origem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn destino;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tempo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn operadora;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cidadeorigem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cidadedestino;
         private System.Windows.Forms.Button salvarelatorio;
         private System.Windows.Forms.Button imprimerelatorio;
         private System.Drawing.Printing.PrintDocument printrelatorio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn destino;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tempo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn operadoradestino;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cidadedestino;
         private System.Windows.Forms.PrintPreviewDialog previewrelatorio;
     }
 }

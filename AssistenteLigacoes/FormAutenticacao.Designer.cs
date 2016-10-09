@@ -146,6 +146,7 @@
             this.Resizable = false;
             this.Text = "Autenticação";
             this.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Load += new System.EventHandler(this.FormAutenticacao_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
