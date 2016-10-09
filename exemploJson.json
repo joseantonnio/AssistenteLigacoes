@@ -1,16 +1,182 @@
 [
-  {
-	"ddd": 16,
-	"prefixo": 3306,
-	"sufixo": 2345,
-	"dataInicio": "21/06/2016 11:35:22",
-	"dataFim": "21/06/2016 11:42:01"
+{
+	"destino": "(16) 3306-8894",
+	"duracao": "00:14:23",
+	"operadora": "Vivo",
+	"cidade": "São Carlos - SP"
 },
 {
-	"ddd": 16,
-	"prefixo": 3323,
-	"sufixo": 1322,
-	"dataInicio": "21/06/2016 11:35:22",
-	"dataFim": "21/06/2016 11:42:01"
+	"destino": "(11) 4002-8652",
+	"duracao": "00:00:42",
+	"operadora": "Embratel",
+	"cidade": "São Paulo - SP"
+},
+{
+	"destino": "(16) 3976-6648",
+	"duracao": "00:39:12",
+	"operadora": "Vivo",
+	"cidade": "Ribeirão Preto"
+},
+{
+	"destino": "(16) 99411-2541",
+	"duracao": "00:17:59",
+	"operadora": "Claro",
+	"cidade": "São Carlos - SP"
+},
+{
+	"destino": "(17) 3502-0047",
+	"duracao": "01:32:07",
+	"operadora": "Vivo",
+	"cidade": "Catanduva - SP"
+},
+{
+	"destino": "(19) 3305-5877",
+	"duracao": "00:47:09",
+	"operadora": "Claro",
+	"cidade": "Piracicaba - SP"
+},
+{
+	"destino": "(16) 2102-9611",
+	"duracao": "00:22:02",
+	"operadora": "Desconhecido",
+	"cidade": "São Carlos - SP"
+},
+{
+	"destino": "(16) 98762-7772",
+	"duracao": "00:59:58",
+	"operadora": "Tim",
+	"cidade": "São Carlos - SP"
+},
+{
+	"destino": "(19) 3337-9945",
+	"duracao": "01:02:35",
+	"operadora": "Vivo",
+	"cidade": "Campinas - SP"
+},
+{
+	"destino": "(16) 3974-6612",
+	"duracao": "00:07:12",
+	"operadora": "Vivo",
+	"cidade": "Ibaté - SP"
+},
+{
+	"destino": "(16) 99203-0014",
+	"duracao": "00:47:11",
+	"operadora": "Claro",
+	"cidade": "Ribeirão Preto - SP"
+},
+{
+	"destino": "(11) 4600-5458",
+	"duracao": "00:23:41",
+	"operadora": "Embratel",
+	"cidade": "São Paulo - SP"
+},
+{
+	"destino": "(16) 99122-7752",
+	"duracao": "00:00:23",
+	"operadora": "Tim",
+	"cidade": "Desconhecida - SP"
+},
+{
+	"destino": "(11) 4002-8922",
+	"duracao": "01:29:40",
+	"operadora": "Desconhecido",
+	"cidade": "São Paulo - SP"
+},
+{
+	"destino": "(17) 3502-8666",
+	"duracao": "00:05:17",
+	"operadora": "Vivo",
+	"cidade": "Novo Horizonte - SP"
+},
+{
+	"destino": "(14) 3007-5698",
+	"duracao": "00:43:45",
+	"operadora": "Embratel",
+	"cidade": "Torrinha - SP"
+},
+{
+	"destino": "(19) 3088-6568",
+	"duracao": "00:59:51",
+	"operadora": "Vivo",
+	"cidade": "Cordeirópolis - SP"
+},
+{
+	"destino": "(16) 3988-8844",
+	"duracao": "00:29:37",
+	"operadora": "Vivo",
+	"cidade": "Matão - SP"
+},
+{
+	"destino": "(12) 4988-8977",
+	"duracao": "00:47:29",
+	"operadora": "Vivo",
+	"cidade": "Aparecida - SP"
+},
+{
+	"destino": "(16) 3366-8875",
+	"duracao": "00:48:11",
+	"operadora": "Vivo",
+	"cidade": "São Carlos - SP"
+},
+{
+	"destino": "(19) 3337-9945",
+	"duracao": "00:25:12",
+	"operadora": "Vivo",
+	"cidade": "Campinas - SP"
+},
+{
+	"destino": "(16) 2102-9611",
+	"duracao": "00:00:02",
+	"operadora": "Desconhecido",
+	"cidade": "São Carlos - SP"
+},
+{
+	"destino": "(16) 2102-9611",
+	"duracao": "00:00:05",
+	"operadora": "Desconhecido",
+	"cidade": "São Carlos - SP"
+},
+{
+	"destino": "(16) 2102-9611",
+	"duracao": "00:49:11",
+	"operadora": "Desconhecido",
+	"cidade": "São Carlos - SP"
+},
+{
+	"destino": "(11) 4600-5458",
+	"duracao": "00:10:36",
+	"operadora": "Embratel",
+	"cidade": "São Paulo - SP"
+},
+{
+	"destino": "(17) 3502-0047",
+	"duracao": "00:19:30",
+	"operadora": "Vivo",
+	"cidade": "Catanduva - SP"
+},
+{
+	"destino": "(16) 3976-6648",
+	"duracao": "00:23:12",
+	"operadora": "Vivo",
+	"cidade": "Ribeirão Preto"
+},
+{
+	"destino": "(16) 3976-6648",
+	"duracao": "01:12:00",
+	"operadora": "Vivo",
+	"cidade": "Ribeirão Preto"
+},
+{
+	"destino": "(16) 3306-8894",
+	"duracao": "00:23:01",
+	"operadora": "Vivo",
+	"cidade": "São Carlos - SP"
+},
+{
+	"destino": "(11) 4002-8652",
+	"duracao": "00:24:57",
+	"operadora": "Embratel",
+	"cidade": "São Paulo - SP"
 }
 ]
