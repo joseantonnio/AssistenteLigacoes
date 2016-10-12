@@ -49,6 +49,7 @@
             this.imprimerelatorio = new System.Windows.Forms.Button();
             this.printrelatorio = new System.Drawing.Printing.PrintDocument();
             this.previewrelatorio = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
             ((System.ComponentModel.ISupportInitialize)(this.conteudorelatorio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,24 +78,28 @@
             // 
             this.destino.HeaderText = "Destino";
             this.destino.Name = "destino";
+            this.destino.ReadOnly = true;
             this.destino.Width = 120;
             // 
             // tempo
             // 
             this.tempo.HeaderText = "Duração";
             this.tempo.Name = "tempo";
+            this.tempo.ReadOnly = true;
             this.tempo.Width = 150;
             // 
             // operadoradestino
             // 
             this.operadoradestino.HeaderText = "Operadora de Destino";
             this.operadoradestino.Name = "operadoradestino";
+            this.operadoradestino.ReadOnly = true;
             this.operadoradestino.Width = 200;
             // 
             // cidadedestino
             // 
             this.cidadedestino.HeaderText = "Cidade de Destino";
             this.cidadedestino.Name = "cidadedestino";
+            this.cidadedestino.ReadOnly = true;
             this.cidadedestino.Width = 250;
             // 
             // labelramal
@@ -265,6 +270,10 @@
             this.previewrelatorio.ShowIcon = false;
             this.previewrelatorio.Visible = false;
             // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
             // RelatorioChamadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,5 +326,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn operadoradestino;
         private System.Windows.Forms.DataGridViewTextBoxColumn cidadedestino;
         private System.Windows.Forms.PrintPreviewDialog previewrelatorio;
+        private System.Windows.Forms.PrintDialog printDialog1;
     }
 }
