@@ -69,7 +69,7 @@ Etapas do Projeto
 * Correções e ajustes
 * Build final do projeto
 
-Fonte do dados da Anatel
+Fonte dos dados da Anatel
 ------------------------
 
 http://sistemas.anatel.gov.br/areaarea/
