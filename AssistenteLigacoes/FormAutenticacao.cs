@@ -161,7 +161,7 @@ namespace AssistenteLigacoes
         {
 
             // Define string de conexão
-            conexao = new MySqlConnection("server=localhost;User Id=root;database=assistente_ligacoes; password=rootpass");
+            conexao = Conexao.conecta();
 
             // Abre conexão
             try

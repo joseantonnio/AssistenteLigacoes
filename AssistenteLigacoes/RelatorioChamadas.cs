@@ -170,7 +170,7 @@ namespace AssistenteLigacoes
             conteudorelatorio.Rows.Clear();
 
             // Faz o download dos dados JSON
-            var json = new WebClient().DownloadString("https://raw.githubusercontent.com/joseantonnio/AssistenteLigacoes/master/exemploJson.json");
+            var json = new WebClient().DownloadString("https://raw.githubusercontent.com/joseantonnio/AssistenteLigacoes/master/Anatel/prefixos.json");
 
             // Armazena os dados em uma array de saída
             var saida = JsonConvert.DeserializeObject<List<Ramal>>(json);

@@ -2,16 +2,16 @@
 AssistenteLigacoes
 ==================
 
-Trabalho da disciplina de **Linguagem de Programação II** do curso de Análise e Desenvolvimento de Sistemas do 
-Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus São Carlos. Dissiplina mestrada pelo
+Trabalho da disciplina de **Linguagem de Programação II** do curso de Análise e Desenvolvimento de Sistemas do
+Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus São Carlos. Disciplina mestrada pelo
 Prof. Dr. Carlos José De Almeida Pereira a.k.a. *Carlão*.
 
 Objetivo
 --------
 
-A comunicação VOIP está cada vez mais comum na atualidade. Nossa proposta para a matéria de LP2 é desenvolver um 
-assistente para uma linha de telefone VOIP que auxiliará o usuário na identificação, gerenciamento e consulta de 
-todas as ligações feitas e/ou recebidas. 
+A comunicação VOIP está cada vez mais comum na atualidade. Nossa proposta para a matéria de LP2 é desenvolver um
+assistente para uma linha de telefone VOIP que auxiliará o usuário na identificação, gerenciamento e consulta de
+todas as ligações feitas e/ou recebidas.
 
 Como funciona o VOIP
 --------------------
@@ -20,19 +20,19 @@ Segundo a Wikipédia, VOIP (Voice over Internet Protocol)é o roteamento de conv
 
 .. image:: https://raw.githubusercontent.com/joseantonnio/AssistenteLigacoes/master/COMO-FUNCIONA-VOIP.png
   :align: center
-  
+
 Então nossa ideia é simples: sistemas VOIP armazenam todas as informações no banco de dados, possibilitando que nosso sistema realize todo o gerenciamento e consulta desses dados gerados pela rede VOIP interna.
 
 Estrutura das classes e métodos
 -------------------------------
 
-O assistente possuirá a classe principal “Telefone”, que possuirá os atributos DDD e prefixo. A classe “Telefone” 
-possuirá os métodos: recebeLigacao, realizaLigacao, finalizaLigacao e buscaGeral. A classe “Ramal” herdará a classe 
-“Telefone” e possuirá os atributos sufixo, data/hora do início do atendimento e data/hora do fim do atendimento. A 
-classe “Ramal” possuirá, além dos métodos da classe mãe: autenticaUsuario, desligaUsuario, buscaLigacoes, buscaOrigem 
+O assistente possuirá a classe principal “Telefone”, que possuirá os atributos DDD e prefixo. A classe “Telefone”
+possuirá os métodos: recebeLigacao, realizaLigacao, finalizaLigacao e buscaGeral. A classe “Ramal” herdará a classe
+“Telefone” e possuirá os atributos sufixo, data/hora do início do atendimento e data/hora do fim do atendimento. A
+classe “Ramal” possuirá, além dos métodos da classe mãe: autenticaUsuario, desligaUsuario, buscaLigacoes, buscaOrigem
 e buscaDestino.
 
-Lembrando que, por não possuirmos um diagrama de classes, documento de requisitos e muito menos um diagrama de entidade 
+Lembrando que, por não possuirmos um diagrama de classes, documento de requisitos e muito menos um diagrama de entidade
 relacionamento, as classes, métodos e atributos podem sofrer alterações ao decorrer do desenvolvimento.
 
 Entradas e saídas
@@ -61,10 +61,9 @@ Etapas do Projeto
 
 * Documentação no GitHub - Concluído!
 * Wireframe de classes - Concluído!
-* Protótipo em CLI
-* GUI (interface gráfica do usuário)
-* Aplicação do protótipo no GUI
-* Comunicação com banco de dados
+* Protótipo em CLI - Concluído!
+* GUI (interface gráfica do usuário) - Em progresso
+* Comunicação com banco de dados - Em progresso
 * Build de testes
 * Correções e ajustes
 * Build final do projeto

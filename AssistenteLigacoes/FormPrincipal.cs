@@ -34,9 +34,6 @@ namespace AssistenteLigacoes
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
 
-            // Aqui vai chamar os metodos de login e etc
-            labellogin.Text = "Ramal autenticado em " + DateTime.Now.ToLongDateString() + ".";
-
         }
 
         private void FormPrincipal_FormClosed(object sender, FormClosedEventArgs e)
@@ -86,5 +83,20 @@ namespace AssistenteLigacoes
             Chamadas.Show();
         }
 
+        private void selecionarramal_Click(object sender, EventArgs e)
+        {
+
+            // Aqui vai chamar os metodos de ramal
+            selecionarramal.Image = Properties.Resources.cross;
+
+            labellogin.Visible = true;
+            labellogin.Text = "Ramal autenticado em " + DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString();
+            string autenticado = DateTime.Now.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss");
+
+            labelstatus.Visible = true;
+            combostatus.Visible = true;
+            alterarstatus.Visible = true;
+
+        }
     }
 }
