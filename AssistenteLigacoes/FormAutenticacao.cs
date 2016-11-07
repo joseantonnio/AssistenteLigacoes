@@ -67,7 +67,7 @@ namespace AssistenteLigacoes
             // Retorna a hash
             return resultado.ToString();
 
-    }
+        }
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
