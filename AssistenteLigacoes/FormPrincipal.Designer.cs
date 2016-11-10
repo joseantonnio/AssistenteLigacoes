@@ -72,6 +72,10 @@
             this.inserirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.removerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.telefoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combostatus = new System.Windows.Forms.ComboBox();
             this.labelstatus = new System.Windows.Forms.Label();
@@ -102,10 +106,6 @@
             this.labelramalativo = new System.Windows.Forms.Label();
             this.selecionarramal = new System.Windows.Forms.Button();
             this.comboramal = new System.Windows.Forms.ComboBox();
-            this.telefoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -226,14 +226,14 @@
             // 
             this.ligaçõesToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.telephone;
             this.ligaçõesToolStripMenuItem.Name = "ligaçõesToolStripMenuItem";
-            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ligaçõesToolStripMenuItem.Text = "Chamadas";
             this.ligaçõesToolStripMenuItem.Click += new System.EventHandler(this.ligaçõesToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(148, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
             // 
             // geralToolStripMenuItem
             // 
@@ -247,7 +247,7 @@
             this.statusToolStripMenuItem});
             this.geralToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.user_business_boss;
             this.geralToolStripMenuItem.Name = "geralToolStripMenuItem";
-            this.geralToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.geralToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.geralToolStripMenuItem.Text = "Administração";
             // 
             // chamadasRealizadasToolStripMenuItem1
@@ -323,7 +323,7 @@
             // 
             this.sobreToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.exclamation;
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sobreToolStripMenuItem.Text = "Sobre";
             // 
             // backupToolStripMenuItem
@@ -333,7 +333,7 @@
             this.restaurarToolStripMenuItem});
             this.backupToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.safe;
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.backupToolStripMenuItem.Text = "Segurança";
             // 
             // backupToolStripMenuItem1
@@ -390,28 +390,28 @@
             this.editarToolStripMenuItem,
             this.removerToolStripMenuItem});
             this.ramalToolStripMenuItem.Name = "ramalToolStripMenuItem";
-            this.ramalToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ramalToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.ramalToolStripMenuItem.Text = "Ramal";
             // 
             // inserirToolStripMenuItem
             // 
             this.inserirToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.add;
             this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.inserirToolStripMenuItem.Text = "Inserir";
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.page_white_edit;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             // 
             // removerToolStripMenuItem
             // 
             this.removerToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.cross;
             this.removerToolStripMenuItem.Name = "removerToolStripMenuItem";
-            this.removerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.removerToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.removerToolStripMenuItem.Text = "Remover";
             // 
             // usuárioToolStripMenuItem
@@ -421,29 +421,60 @@
             this.editarToolStripMenuItem1,
             this.removerToolStripMenuItem1});
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.usuárioToolStripMenuItem.Text = "Usuário";
             // 
             // inserirToolStripMenuItem1
             // 
             this.inserirToolStripMenuItem1.Image = global::AssistenteLigacoes.Properties.Resources.add;
             this.inserirToolStripMenuItem1.Name = "inserirToolStripMenuItem1";
-            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
             this.inserirToolStripMenuItem1.Text = "Inserir";
             // 
             // editarToolStripMenuItem1
             // 
             this.editarToolStripMenuItem1.Image = global::AssistenteLigacoes.Properties.Resources.page_white_edit;
             this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
             this.editarToolStripMenuItem1.Text = "Editar";
             // 
             // removerToolStripMenuItem1
             // 
             this.removerToolStripMenuItem1.Image = global::AssistenteLigacoes.Properties.Resources.cross;
             this.removerToolStripMenuItem1.Name = "removerToolStripMenuItem1";
-            this.removerToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.removerToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
             this.removerToolStripMenuItem1.Text = "Remover";
+            // 
+            // telefoneToolStripMenuItem
+            // 
+            this.telefoneToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem7,
+            this.toolStripMenuItem8,
+            this.toolStripMenuItem9});
+            this.telefoneToolStripMenuItem.Name = "telefoneToolStripMenuItem";
+            this.telefoneToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.telefoneToolStripMenuItem.Text = "Telefone";
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Image = global::AssistenteLigacoes.Properties.Resources.add;
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(121, 22);
+            this.toolStripMenuItem7.Text = "Inserir";
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Image = global::AssistenteLigacoes.Properties.Resources.page_white_edit;
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(121, 22);
+            this.toolStripMenuItem8.Text = "Editar";
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Image = global::AssistenteLigacoes.Properties.Resources.cross;
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(121, 22);
+            this.toolStripMenuItem9.Text = "Remover";
             // 
             // sairToolStripMenuItem
             // 
@@ -460,12 +491,13 @@
             "Disponível",
             "Em Atendimento",
             "Ausente",
-            "Pausa"});
+            "Pausa",
+            "Desligado"});
             this.combostatus.Location = new System.Drawing.Point(194, 166);
             this.combostatus.Name = "combostatus";
             this.combostatus.Size = new System.Drawing.Size(306, 28);
             this.combostatus.TabIndex = 2;
-            this.combostatus.Text = "Selecione...";
+            this.combostatus.Text = "Desligado";
             this.combostatus.Visible = false;
             // 
             // labelstatus
@@ -759,37 +791,6 @@
             this.comboramal.Size = new System.Drawing.Size(306, 28);
             this.comboramal.TabIndex = 10;
             this.comboramal.Text = "Selecione...";
-            // 
-            // telefoneToolStripMenuItem
-            // 
-            this.telefoneToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem7,
-            this.toolStripMenuItem8,
-            this.toolStripMenuItem9});
-            this.telefoneToolStripMenuItem.Name = "telefoneToolStripMenuItem";
-            this.telefoneToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.telefoneToolStripMenuItem.Text = "Telefone";
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Image = global::AssistenteLigacoes.Properties.Resources.add;
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem7.Text = "Inserir";
-            // 
-            // toolStripMenuItem8
-            // 
-            this.toolStripMenuItem8.Image = global::AssistenteLigacoes.Properties.Resources.page_white_edit;
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem8.Text = "Editar";
-            // 
-            // toolStripMenuItem9
-            // 
-            this.toolStripMenuItem9.Image = global::AssistenteLigacoes.Properties.Resources.cross;
-            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem9.Text = "Remover";
             // 
             // FormPrincipal
             // 

@@ -20,7 +20,7 @@ namespace AssistenteLigacoes
         private FormAutenticacao Autentica;
 
         
-        public FormPrincipal(FormAutenticacao Chamada)
+        public FormPrincipal(FormAutenticacao Chamada, Usuario dados)
         {
 
             // Inicializa o FormPrincipal
@@ -28,6 +28,7 @@ namespace AssistenteLigacoes
 
             // A variavel Autentica recebe o FormAutenticacao que estava aberto
             Autentica = Chamada;
+            avatarusuario.ImageLocation = dados.avatar;
 
         }
 

@@ -94,6 +94,8 @@
     <Compile Include="RelatorioChamadas.Designer.cs">
       <DependentUpon>RelatorioChamadas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telefone.cs" />
+    <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>

@@ -183,7 +183,7 @@ namespace AssistenteLigacoes
                 s.cidade = Encoding.UTF8.GetString(bytes);
 
                 // Adiciona os dados no grid
-                string[] row = new string[] { s.destino, s.duracao, s.operadora, s.cidade };
+                string[] row = new string[] { s.prefixo, s.cidade, s.uf, s.operadora, s.tipo, s.pais };
                 conteudorelatorio.Rows.Add(row);
 
             }
@@ -457,10 +457,12 @@ namespace AssistenteLigacoes
     public class Ramal
     {
 
-        public string destino { get; set; }
-        public string duracao { get; set; }
-        public string operadora { get; set; }
+        public string prefixo { get; set; }
         public string cidade { get; set; }
+        public string uf { get; set; }
+        public string operadora { get; set; }
+        public string tipo { get; set; }
+        public string pais { get; set; }
 
 
     }

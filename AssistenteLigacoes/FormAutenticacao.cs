@@ -20,8 +20,8 @@ namespace AssistenteLigacoes
     public partial class FormAutenticacao : MetroForm
     {
 
-        // Declara variaveis de conexão com o MySQL
-        private MySqlConnection conexao;
+        // Declara variavel do usuario
+        Usuario dados;
 
         // Declara uma variavel para verificar se o usuário é admin ou não
         private bool isAdmin = false;
@@ -42,31 +42,6 @@ namespace AssistenteLigacoes
         {
             // Altera a variavel isAdmin para falso
             isAdmin = false;
-        }
-
-        public static string gerarSHA256(string texto)
-        {
-
-            // Utiliza a classe SHA256 do System Security
-            SHA256 sha256 = SHA256Managed.Create();
-
-            // Converte para bytes e gera a hash
-            byte[] bytes = Encoding.UTF8.GetBytes(texto);
-            byte[] hash = sha256.ComputeHash(bytes);
-
-            // Cria uma string utilizando o StringBuilder
-            StringBuilder resultado = new StringBuilder();
-
-            // Realiza um laço que percorre cada byte do hash
-            for (int i = 0; i < hash.Length; i++)
-            {
-                // Adiciona ao resultado o valor do byte
-                resultado.Append(hash[i].ToString("x2"));
-            }
-
-            // Retorna a hash
-            return resultado.ToString();
-
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -102,17 +77,12 @@ namespace AssistenteLigacoes
 
             // Armazena o usuário e senha em variáveis
             string u = username.Text;
-            string p = gerarSHA256(password.Text);
+            string p = password.Text;
 
-            // Busca usuário e senha no banco de dados
-            MySqlCommand comando = new MySqlCommand("SELECT nome, admin FROM usuarios WHERE usuario = '" + u + "' AND senha = '" + p + "'", conexao);
+            dados = new Usuario(u, p);
 
-            // Executa a busca
-            MySqlDataReader busca = comando.ExecuteReader();
+            if (dados.autenticado) {
 
-            // Verifica se o usuário passa na autenticação
-            if (busca.HasRows)
-            {
                 // Limpa o usuário e senha
                 username.Text = "";
                 password.Text = "";
@@ -123,21 +93,14 @@ namespace AssistenteLigacoes
                 // Oculta o FormAutenticacao
                 Hide();
 
-                // Pega a permissão do usuário
-                busca.Read();
-                bool permissao = busca.GetBoolean(busca.GetOrdinal("admin"));
-
-                // Limpa a busca
-                busca.Close();
-
                 // Verifica se é administrador
-                if (permissao && isAdmin)
+                if (dados.admin && isAdmin)
                 {
                     MessageBox.Show("Usuário terá permissões de administrador!");
                 }
 
                 // Inicializa e exibe o FormPrincipal
-                FormPrincipal Principal = new FormPrincipal(this);
+                FormPrincipal Principal = new FormPrincipal(this, dados);
                 Principal.Show();
 
             }
@@ -149,9 +112,6 @@ namespace AssistenteLigacoes
                 status.Text = "Usuário e senha incorretos.";
                 status.Visible = true;
 
-                // Limpa a busca
-                busca.Close();
-
                 return;
 
             }
@@ -160,23 +120,11 @@ namespace AssistenteLigacoes
         private void FormAutenticacao_Load(object sender, EventArgs e)
         {
 
-            // Define string de conexão
-            conexao = Conexao.conecta();
-
-            // Abre conexão
-            try
-            {
-                conexao.Open();
-            }
-            catch
-            {
-                MessageBox.Show("Não foi possível conectar ao banco de dados! Entre em contato com o suporte.");
-            }
         }
 
         private void FormAutenticacao_FormClosing(object sender, FormClosingEventArgs e)
         {
-            conexao.Close();
+
         }
     }
 }
