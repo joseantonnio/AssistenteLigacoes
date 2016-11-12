@@ -13,22 +13,29 @@ namespace AssistenteLigacoes
     {
 
         private string host;
+        private string usuario;
+        public string banco;
+        private string senha;
 
-        public Conexao()
+        public Conexao(string banco)
         {
             this.host = "localhost";
+            this.usuario = "root";
+            this.senha = "rootpass";
+            this.banco = banco;
         }
 
-        public string Host
-        {
-            get { return host; }
-        }
+        public string Host { get { return host; } }
+        public string Usuario { get { return usuario; } }
+        public string Banco { set { banco = value; } get { return banco; } }
+        public string Senha { get { return senha; } }
+
 
         public MySqlConnection conecta()
         {
 
             // Cria a conexão com o MySQL
-            MySqlConnection conexao = new MySqlConnection("server="+Host+";User Id=root;database=assistente_ligacoes; password=rootpass");
+            MySqlConnection conexao = new MySqlConnection("server="+Host+";User Id="+Usuario+";database="+Banco+"; password="+Senha);
             return conexao;
 
         }

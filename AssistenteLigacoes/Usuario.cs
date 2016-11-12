@@ -31,7 +31,7 @@ namespace AssistenteLigacoes
             this.senha = gerarSHA256(senha);
             this.autenticado = false;
 
-            conexao = new Conexao();
+            conexao = new Conexao("assistente_ligacoes");
             conecta = conexao.conecta();
 
             // Abre conexão
