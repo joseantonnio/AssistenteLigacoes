@@ -43,9 +43,9 @@
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ligaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chamadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.geralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminrelatorios = new System.Windows.Forms.ToolStripMenuItem();
             this.chamadasRealizadasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.ramaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,13 +57,13 @@
             this.statusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.segurancaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.backupToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.restaurarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilizadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarAvatarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
-            this.administraçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adminconfiguracoes = new System.Windows.Forms.ToolStripMenuItem();
             this.ramalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,26 +79,26 @@
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combostatus = new System.Windows.Forms.ComboBox();
             this.labelstatus = new System.Windows.Forms.Label();
-            this.statusatual = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.nomeusuario = new System.Windows.Forms.Label();
+            this.tabramal = new System.Windows.Forms.TabControl();
+            this.paginaRamal = new System.Windows.Forms.TabPage();
+            this.ramaloperadora = new System.Windows.Forms.Label();
+            this.labelramaloperadora = new System.Windows.Forms.Label();
+            this.numeroramal = new System.Windows.Forms.Label();
             this.numerotelefone = new System.Windows.Forms.Label();
-            this.labelresponsavel = new System.Windows.Forms.Label();
             this.labelramal = new System.Windows.Forms.Label();
             this.labeltelefone = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.paginaLigacao = new System.Windows.Forms.TabPage();
             this.operadoradestino = new System.Windows.Forms.Label();
             this.estadodestino = new System.Windows.Forms.Label();
             this.labeloperadora = new System.Windows.Forms.Label();
             this.labelestado = new System.Windows.Forms.Label();
             this.cidadedestino = new System.Windows.Forms.Label();
             this.telefoneligacao = new System.Windows.Forms.Label();
-            this.tipoligacao = new System.Windows.Forms.Label();
+            this.statusligacao = new System.Windows.Forms.Label();
             this.labelcidade = new System.Windows.Forms.Label();
             this.labeldestino = new System.Windows.Forms.Label();
-            this.labeltipo = new System.Windows.Forms.Label();
+            this.labelespaco = new System.Windows.Forms.Label();
             this.labellogin = new System.Windows.Forms.Label();
             this.alterarstatus = new System.Windows.Forms.Button();
             this.avatarusuario = new System.Windows.Forms.PictureBox();
@@ -106,10 +106,11 @@
             this.labelramalativo = new System.Windows.Forms.Label();
             this.selecionarramal = new System.Windows.Forms.Button();
             this.comboramal = new System.Windows.Forms.ComboBox();
+            this.telefonecompleto = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tabramal.SuspendLayout();
+            this.paginaRamal.SuspendLayout();
+            this.paginaLigacao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avatarusuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -215,29 +216,29 @@
             // relatóriosToolStripMenuItem
             // 
             this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ligaçõesToolStripMenuItem,
+            this.chamadasToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.geralToolStripMenuItem});
+            this.adminrelatorios});
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
             this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             // 
-            // ligaçõesToolStripMenuItem
+            // chamadasToolStripMenuItem
             // 
-            this.ligaçõesToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.telephone;
-            this.ligaçõesToolStripMenuItem.Name = "ligaçõesToolStripMenuItem";
-            this.ligaçõesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.ligaçõesToolStripMenuItem.Text = "Chamadas";
-            this.ligaçõesToolStripMenuItem.Click += new System.EventHandler(this.ligaçõesToolStripMenuItem_Click);
+            this.chamadasToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.telephone;
+            this.chamadasToolStripMenuItem.Name = "chamadasToolStripMenuItem";
+            this.chamadasToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.chamadasToolStripMenuItem.Text = "Chamadas";
+            this.chamadasToolStripMenuItem.Click += new System.EventHandler(this.chamadasToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(148, 6);
             // 
-            // geralToolStripMenuItem
+            // adminrelatorios
             // 
-            this.geralToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.adminrelatorios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.chamadasRealizadasToolStripMenuItem1,
             this.toolStripMenuItem2,
             this.ramaisToolStripMenuItem,
@@ -245,10 +246,10 @@
             this.toolStripMenuItem3,
             this.observaçõesToolStripMenuItem,
             this.statusToolStripMenuItem});
-            this.geralToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.user_business_boss;
-            this.geralToolStripMenuItem.Name = "geralToolStripMenuItem";
-            this.geralToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.geralToolStripMenuItem.Text = "Administração";
+            this.adminrelatorios.Image = global::AssistenteLigacoes.Properties.Resources.user_business_boss;
+            this.adminrelatorios.Name = "adminrelatorios";
+            this.adminrelatorios.Size = new System.Drawing.Size(151, 22);
+            this.adminrelatorios.Text = "Administração";
             // 
             // chamadasRealizadasToolStripMenuItem1
             // 
@@ -314,7 +315,7 @@
             // 
             this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sobreToolStripMenuItem,
-            this.backupToolStripMenuItem});
+            this.segurancaToolStripMenuItem});
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
             this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
@@ -323,25 +324,25 @@
             // 
             this.sobreToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.exclamation;
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.sobreToolStripMenuItem.Text = "Sobre";
+            // 
+            // segurancaToolStripMenuItem
+            // 
+            this.segurancaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backupToolStripMenuItem,
+            this.restaurarToolStripMenuItem});
+            this.segurancaToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.safe;
+            this.segurancaToolStripMenuItem.Name = "segurancaToolStripMenuItem";
+            this.segurancaToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.segurancaToolStripMenuItem.Text = "Segurança";
             // 
             // backupToolStripMenuItem
             // 
-            this.backupToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.backupToolStripMenuItem1,
-            this.restaurarToolStripMenuItem});
-            this.backupToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.safe;
+            this.backupToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.drive_disk;
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.backupToolStripMenuItem.Text = "Segurança";
-            // 
-            // backupToolStripMenuItem1
-            // 
-            this.backupToolStripMenuItem1.Image = global::AssistenteLigacoes.Properties.Resources.drive_disk;
-            this.backupToolStripMenuItem1.Name = "backupToolStripMenuItem1";
-            this.backupToolStripMenuItem1.Size = new System.Drawing.Size(123, 22);
-            this.backupToolStripMenuItem1.Text = "Backup";
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.backupToolStripMenuItem.Text = "Backup";
             // 
             // restaurarToolStripMenuItem
             // 
@@ -355,7 +356,7 @@
             this.utilizadorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.alterarAvatarToolStripMenuItem,
             this.toolStripMenuItem6,
-            this.administraçãoToolStripMenuItem});
+            this.adminconfiguracoes});
             this.utilizadorToolStripMenuItem.Name = "utilizadorToolStripMenuItem";
             this.utilizadorToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
             this.utilizadorToolStripMenuItem.Text = "Configurações";
@@ -364,24 +365,24 @@
             // 
             this.alterarAvatarToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.photo;
             this.alterarAvatarToolStripMenuItem.Name = "alterarAvatarToolStripMenuItem";
-            this.alterarAvatarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.alterarAvatarToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.alterarAvatarToolStripMenuItem.Text = "Alterar avatar";
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(148, 6);
             // 
-            // administraçãoToolStripMenuItem
+            // adminconfiguracoes
             // 
-            this.administraçãoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.adminconfiguracoes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ramalToolStripMenuItem,
             this.usuárioToolStripMenuItem,
             this.telefoneToolStripMenuItem});
-            this.administraçãoToolStripMenuItem.Image = global::AssistenteLigacoes.Properties.Resources.user_business_boss;
-            this.administraçãoToolStripMenuItem.Name = "administraçãoToolStripMenuItem";
-            this.administraçãoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.administraçãoToolStripMenuItem.Text = "Administração";
+            this.adminconfiguracoes.Image = global::AssistenteLigacoes.Properties.Resources.user_business_boss;
+            this.adminconfiguracoes.Name = "adminconfiguracoes";
+            this.adminconfiguracoes.Size = new System.Drawing.Size(151, 22);
+            this.adminconfiguracoes.Text = "Administração";
             // 
             // ramalToolStripMenuItem
             // 
@@ -511,82 +512,83 @@
             this.labelstatus.Text = "Status:";
             this.labelstatus.Visible = false;
             // 
-            // statusatual
+            // nomeusuario
             // 
-            this.statusatual.AutoSize = true;
-            this.statusatual.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusatual.ForeColor = System.Drawing.Color.SteelBlue;
-            this.statusatual.Location = new System.Drawing.Point(127, 93);
-            this.statusatual.Name = "statusatual";
-            this.statusatual.Size = new System.Drawing.Size(176, 36);
-            this.statusatual.TabIndex = 5;
-            this.statusatual.Text = "Status.Atual";
+            this.nomeusuario.AutoSize = true;
+            this.nomeusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeusuario.ForeColor = System.Drawing.Color.SteelBlue;
+            this.nomeusuario.Location = new System.Drawing.Point(127, 93);
+            this.nomeusuario.Name = "nomeusuario";
+            this.nomeusuario.Size = new System.Drawing.Size(205, 36);
+            this.nomeusuario.TabIndex = 5;
+            this.nomeusuario.Text = "Nome.Usuario";
             // 
-            // tabControl1
+            // tabramal
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(23, 200);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(521, 137);
-            this.tabControl1.TabIndex = 8;
+            this.tabramal.Controls.Add(this.paginaRamal);
+            this.tabramal.Controls.Add(this.paginaLigacao);
+            this.tabramal.Location = new System.Drawing.Point(23, 200);
+            this.tabramal.Name = "tabramal";
+            this.tabramal.SelectedIndex = 0;
+            this.tabramal.Size = new System.Drawing.Size(521, 137);
+            this.tabramal.TabIndex = 8;
             // 
-            // tabPage1
+            // paginaRamal
             // 
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.numerotelefone);
-            this.tabPage1.Controls.Add(this.labelresponsavel);
-            this.tabPage1.Controls.Add(this.labelramal);
-            this.tabPage1.Controls.Add(this.labeltelefone);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(513, 111);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Ramal";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.paginaRamal.Controls.Add(this.telefonecompleto);
+            this.paginaRamal.Controls.Add(this.ramaloperadora);
+            this.paginaRamal.Controls.Add(this.labelramaloperadora);
+            this.paginaRamal.Controls.Add(this.numeroramal);
+            this.paginaRamal.Controls.Add(this.numerotelefone);
+            this.paginaRamal.Controls.Add(this.labelramal);
+            this.paginaRamal.Controls.Add(this.labeltelefone);
+            this.paginaRamal.Location = new System.Drawing.Point(4, 22);
+            this.paginaRamal.Name = "paginaRamal";
+            this.paginaRamal.Padding = new System.Windows.Forms.Padding(3);
+            this.paginaRamal.Size = new System.Drawing.Size(513, 111);
+            this.paginaRamal.TabIndex = 0;
+            this.paginaRamal.Text = "Ramal";
+            this.paginaRamal.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // ramaloperadora
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(110, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 18);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Nome.Responsavel";
+            this.ramaloperadora.AutoSize = true;
+            this.ramaloperadora.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ramaloperadora.Location = new System.Drawing.Point(110, 45);
+            this.ramaloperadora.Name = "ramaloperadora";
+            this.ramaloperadora.Size = new System.Drawing.Size(124, 18);
+            this.ramaloperadora.TabIndex = 7;
+            this.ramaloperadora.Text = "Nome.Operadora";
             // 
-            // label1
+            // labelramaloperadora
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(110, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 18);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Numero.Ramal";
+            this.labelramaloperadora.AutoSize = true;
+            this.labelramaloperadora.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelramaloperadora.Location = new System.Drawing.Point(6, 45);
+            this.labelramaloperadora.Name = "labelramaloperadora";
+            this.labelramaloperadora.Size = new System.Drawing.Size(83, 18);
+            this.labelramaloperadora.TabIndex = 6;
+            this.labelramaloperadora.Text = "Operadora:";
+            // 
+            // numeroramal
+            // 
+            this.numeroramal.AutoSize = true;
+            this.numeroramal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numeroramal.Location = new System.Drawing.Point(110, 26);
+            this.numeroramal.Name = "numeroramal";
+            this.numeroramal.Size = new System.Drawing.Size(109, 18);
+            this.numeroramal.TabIndex = 5;
+            this.numeroramal.Text = "Numero.Ramal";
             // 
             // numerotelefone
             // 
             this.numerotelefone.AutoSize = true;
             this.numerotelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numerotelefone.Location = new System.Drawing.Point(110, 5);
+            this.numerotelefone.Location = new System.Drawing.Point(110, 8);
             this.numerotelefone.Name = "numerotelefone";
             this.numerotelefone.Size = new System.Drawing.Size(123, 18);
             this.numerotelefone.TabIndex = 4;
             this.numerotelefone.Text = "Numero.Telefone";
-            // 
-            // labelresponsavel
-            // 
-            this.labelresponsavel.AutoSize = true;
-            this.labelresponsavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelresponsavel.Location = new System.Drawing.Point(6, 44);
-            this.labelresponsavel.Name = "labelresponsavel";
-            this.labelresponsavel.Size = new System.Drawing.Size(98, 18);
-            this.labelresponsavel.TabIndex = 3;
-            this.labelresponsavel.Text = "Responsável:";
             // 
             // labelramal
             // 
@@ -608,25 +610,25 @@
             this.labeltelefone.TabIndex = 0;
             this.labeltelefone.Text = "Telefone:";
             // 
-            // tabPage2
+            // paginaLigacao
             // 
-            this.tabPage2.Controls.Add(this.operadoradestino);
-            this.tabPage2.Controls.Add(this.estadodestino);
-            this.tabPage2.Controls.Add(this.labeloperadora);
-            this.tabPage2.Controls.Add(this.labelestado);
-            this.tabPage2.Controls.Add(this.cidadedestino);
-            this.tabPage2.Controls.Add(this.telefoneligacao);
-            this.tabPage2.Controls.Add(this.tipoligacao);
-            this.tabPage2.Controls.Add(this.labelcidade);
-            this.tabPage2.Controls.Add(this.labeldestino);
-            this.tabPage2.Controls.Add(this.labeltipo);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(513, 111);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ligação";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.paginaLigacao.Controls.Add(this.operadoradestino);
+            this.paginaLigacao.Controls.Add(this.estadodestino);
+            this.paginaLigacao.Controls.Add(this.labeloperadora);
+            this.paginaLigacao.Controls.Add(this.labelestado);
+            this.paginaLigacao.Controls.Add(this.cidadedestino);
+            this.paginaLigacao.Controls.Add(this.telefoneligacao);
+            this.paginaLigacao.Controls.Add(this.statusligacao);
+            this.paginaLigacao.Controls.Add(this.labelcidade);
+            this.paginaLigacao.Controls.Add(this.labeldestino);
+            this.paginaLigacao.Controls.Add(this.labelespaco);
+            this.paginaLigacao.Location = new System.Drawing.Point(4, 22);
+            this.paginaLigacao.Name = "paginaLigacao";
+            this.paginaLigacao.Padding = new System.Windows.Forms.Padding(3);
+            this.paginaLigacao.Size = new System.Drawing.Size(513, 111);
+            this.paginaLigacao.TabIndex = 1;
+            this.paginaLigacao.Text = "Ligação";
+            this.paginaLigacao.UseVisualStyleBackColor = true;
             // 
             // operadoradestino
             // 
@@ -688,15 +690,15 @@
             this.telefoneligacao.TabIndex = 11;
             this.telefoneligacao.Text = "Numero.Ligacao";
             // 
-            // tipoligacao
+            // statusligacao
             // 
-            this.tipoligacao.AutoSize = true;
-            this.tipoligacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tipoligacao.Location = new System.Drawing.Point(110, 5);
-            this.tipoligacao.Name = "tipoligacao";
-            this.tipoligacao.Size = new System.Drawing.Size(93, 18);
-            this.tipoligacao.TabIndex = 10;
-            this.tipoligacao.Text = "Tipo.Ligacao";
+            this.statusligacao.AutoSize = true;
+            this.statusligacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusligacao.Location = new System.Drawing.Point(110, 5);
+            this.statusligacao.Name = "statusligacao";
+            this.statusligacao.Size = new System.Drawing.Size(106, 18);
+            this.statusligacao.TabIndex = 10;
+            this.statusligacao.Text = "Status.Ligacao";
             // 
             // labelcidade
             // 
@@ -718,15 +720,15 @@
             this.labeldestino.TabIndex = 8;
             this.labeldestino.Text = "Telefone:";
             // 
-            // labeltipo
+            // labelespaco
             // 
-            this.labeltipo.AutoSize = true;
-            this.labeltipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeltipo.Location = new System.Drawing.Point(6, 8);
-            this.labeltipo.Name = "labeltipo";
-            this.labeltipo.Size = new System.Drawing.Size(41, 18);
-            this.labeltipo.TabIndex = 7;
-            this.labeltipo.Text = "Tipo:";
+            this.labelespaco.AutoSize = true;
+            this.labelespaco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelespaco.Location = new System.Drawing.Point(6, 8);
+            this.labelespaco.Name = "labelespaco";
+            this.labelespaco.Size = new System.Drawing.Size(41, 18);
+            this.labelespaco.TabIndex = 7;
+            this.labelespaco.Text = "Tipo:";
             // 
             // labellogin
             // 
@@ -792,6 +794,16 @@
             this.comboramal.TabIndex = 10;
             this.comboramal.Text = "Selecione...";
             // 
+            // telefonecompleto
+            // 
+            this.telefonecompleto.AutoSize = true;
+            this.telefonecompleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.telefonecompleto.Location = new System.Drawing.Point(6, 90);
+            this.telefonecompleto.Name = "telefonecompleto";
+            this.telefonecompleto.Size = new System.Drawing.Size(382, 18);
+            this.telefonecompleto.TabIndex = 8;
+            this.telefonecompleto.Text = "Seu telefone completo é (DDD) PREFIXO-RAMAL";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -800,8 +812,8 @@
             this.Controls.Add(this.selecionarramal);
             this.Controls.Add(this.comboramal);
             this.Controls.Add(this.labelramalativo);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.statusatual);
+            this.Controls.Add(this.tabramal);
+            this.Controls.Add(this.nomeusuario);
             this.Controls.Add(this.alterarstatus);
             this.Controls.Add(this.labelstatus);
             this.Controls.Add(this.labellogin);
@@ -818,11 +830,11 @@
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.tabramal.ResumeLayout(false);
+            this.paginaRamal.ResumeLayout(false);
+            this.paginaRamal.PerformLayout();
+            this.paginaLigacao.ResumeLayout(false);
+            this.paginaLigacao.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.avatarusuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
@@ -837,11 +849,11 @@
         private System.Windows.Forms.ComboBox combostatus;
         private System.Windows.Forms.Label labelstatus;
         private System.Windows.Forms.Button alterarstatus;
-        private System.Windows.Forms.Label statusatual;
+        private System.Windows.Forms.Label nomeusuario;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ligaçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chamadasToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem geralToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adminrelatorios;
         private System.Windows.Forms.ToolStripMenuItem ramaisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chamadasRealizadasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
@@ -861,18 +873,16 @@
         private System.Windows.Forms.ToolStripMenuItem alterarAvatarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alterarStatusToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem segurancaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem restaurarToolStripMenuItem;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabControl tabramal;
+        private System.Windows.Forms.TabPage paginaRamal;
+        private System.Windows.Forms.TabPage paginaLigacao;
         private System.Windows.Forms.Label labellogin;
         private System.Windows.Forms.Label labelramal;
         private System.Windows.Forms.Label labeltelefone;
-        private System.Windows.Forms.Label labelresponsavel;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label numeroramal;
         private System.Windows.Forms.Label numerotelefone;
         private System.Windows.Forms.Label operadoradestino;
         private System.Windows.Forms.Label estadodestino;
@@ -880,10 +890,10 @@
         private System.Windows.Forms.Label labelestado;
         private System.Windows.Forms.Label cidadedestino;
         private System.Windows.Forms.Label telefoneligacao;
-        private System.Windows.Forms.Label tipoligacao;
+        private System.Windows.Forms.Label statusligacao;
         private System.Windows.Forms.Label labelcidade;
         private System.Windows.Forms.Label labeldestino;
-        private System.Windows.Forms.Label labeltipo;
+        private System.Windows.Forms.Label labelespaco;
         private System.Windows.Forms.ToolStripMenuItem disponívelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem emAtendimentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ausenteToolStripMenuItem;
@@ -892,7 +902,7 @@
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem statusToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
-        private System.Windows.Forms.ToolStripMenuItem administraçãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adminconfiguracoes;
         private System.Windows.Forms.ToolStripMenuItem ramalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
@@ -908,5 +918,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        private System.Windows.Forms.Label ramaloperadora;
+        private System.Windows.Forms.Label labelramaloperadora;
+        private System.Windows.Forms.Label telefonecompleto;
     }
 }

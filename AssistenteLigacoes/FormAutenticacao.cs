@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Cryptography;
+using System.IO;
 
 // Referencia MySQL
 using MySql.Data.MySqlClient;
@@ -109,7 +110,7 @@ namespace AssistenteLigacoes
                     
                 // Altera a cor para vermelho, informa o erro e exibe
                 status.ForeColor = Color.OrangeRed;
-                status.Text = "Usuário e senha incorretos.";
+                status.Text = "Usuário e/ou senha incorretos ou não existem.";
                 status.Visible = true;
 
                 return;

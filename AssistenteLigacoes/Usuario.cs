@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
+using System.Windows.Forms;
+using System.Drawing;
+using System.IO;
 
 // Referencia MySQL
 using MySql.Data.MySqlClient;
@@ -18,7 +21,8 @@ namespace AssistenteLigacoes
         private string senha;
         public string nome;
         public bool admin;
-        public string avatar;
+        private byte[] img;
+        public MemoryStream avatar;
         public bool autenticado;
 
         private Conexao conexao;
@@ -41,10 +45,11 @@ namespace AssistenteLigacoes
             }
             catch
             {
+                MessageBox.Show("Não foi possível conectar o banco de dados.", "Erro de conexão", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
-            MySqlDataReader busca = conexao.comando("SELECT * FROM usuarios WHERE usuario = '" + this.login + "' AND senha = '" + this.senha + "'", conecta).ExecuteReader();
+            MySqlDataReader busca = conexao.comando("SELECT * FROM usuarios WHERE usuario = '" + Login + "' AND senha = '" + Senha + "'", conecta).ExecuteReader();
 
             if (busca.HasRows)
             {
@@ -53,7 +58,8 @@ namespace AssistenteLigacoes
                     id = (int)busca["u_id"];
                     nome = busca["nome"].ToString();
                     admin = busca.GetBoolean(busca.GetOrdinal("admin"));
-                    avatar = busca["avatar"].ToString();
+                    img = (byte[])busca["avatar"];
+                    avatar = new MemoryStream(img);
                     autenticado = true;
                 }
             }
@@ -73,7 +79,7 @@ namespace AssistenteLigacoes
 
         public bool Admin { set { admin = value; } get { return admin; } }
 
-        public string Avatar { set { avatar = value; } get { return avatar; } }
+        public MemoryStream Avatar { set { avatar = value; } get { return avatar; } }
 
         public bool Autenticado { set { autenticado = value; } get { return autenticado; } }
 

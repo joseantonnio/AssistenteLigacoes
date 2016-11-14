@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
 
 // Metro Framework
 using MetroFramework.Forms;
@@ -17,18 +18,43 @@ namespace AssistenteLigacoes
     {
 
         // Declara uma variavel para armazenar o FormAutenticacao
-        private FormAutenticacao Autentica;
+        private FormAutenticacao anterior;
 
         
-        public FormPrincipal(FormAutenticacao Chamada, Usuario dados)
+        public FormPrincipal(FormAutenticacao formulario, Usuario dados)
         {
 
             // Inicializa o FormPrincipal
             InitializeComponent();
 
             // A variavel Autentica recebe o FormAutenticacao que estava aberto
-            Autentica = Chamada;
-            avatarusuario.ImageLocation = dados.avatar;
+            anterior = formulario;
+
+            // Define um path para criar a imagem que irá sobrepor o avatar
+            GraphicsPath path = new GraphicsPath();
+
+            // Cria um circulo
+            path.AddEllipse(0, 0, avatarusuario.Width, avatarusuario.Height);
+
+            // Define o circulo como as regiões do avatar
+            avatarusuario.Region = new Region(path);
+
+            // Carrega os dados do usuário no formulário
+            avatarusuario.Image = Image.FromStream(dados.avatar);
+            nomeusuario.Text = dados.nome;
+
+            // Limpa campos
+            tabramal.Hide();
+
+            // Verifica se é admin, caso não for destroi os acessos para áreas protegidas
+            if (!dados.admin)
+            {
+                adminrelatorios.Dispose();
+                toolStripMenuItem1.Dispose();
+                adminconfiguracoes.Dispose();
+                toolStripMenuItem6.Dispose();
+                segurancaToolStripMenuItem.Dispose();
+            }
 
         }
 
@@ -41,7 +67,7 @@ namespace AssistenteLigacoes
         {
 
             // Ao fechar o FormPrincipal, o FormAutentica é restaurado
-            Autentica.Show();
+            anterior.Show();
 
         }
 
@@ -78,7 +104,7 @@ namespace AssistenteLigacoes
             Chamadas.Show();
         }
 
-        private void ligaçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void chamadasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RelatorioChamadas Chamadas = new RelatorioChamadas();
             Chamadas.Show();
@@ -97,6 +123,7 @@ namespace AssistenteLigacoes
             labelstatus.Visible = true;
             combostatus.Visible = true;
             alterarstatus.Visible = true;
+            tabramal.Visible = true;
 
         }
     }
