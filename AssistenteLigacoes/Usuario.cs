@@ -58,8 +58,14 @@ namespace AssistenteLigacoes
                     id = (int)busca["u_id"];
                     nome = busca["nome"].ToString();
                     admin = busca.GetBoolean(busca.GetOrdinal("admin"));
-                    img = (byte[])busca["avatar"];
-                    avatar = new MemoryStream(img);
+
+                    if (busca["avatar"] != DBNull.Value)
+                    {
+                        img = (byte[])busca["avatar"];
+                        avatar = new MemoryStream(img);
+                    } else
+                        avatar = null;
+
                     autenticado = true;
                 }
             }

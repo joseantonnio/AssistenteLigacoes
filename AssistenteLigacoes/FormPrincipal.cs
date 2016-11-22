@@ -40,7 +40,14 @@ namespace AssistenteLigacoes
             avatarusuario.Region = new Region(path);
 
             // Carrega os dados do usuário no formulário
-            avatarusuario.Image = Image.FromStream(dados.avatar);
+            try
+            {
+                avatarusuario.Image = Image.FromStream(dados.avatar);
+            }
+            catch (ArgumentException e)
+            {
+                e = null;
+            }
             nomeusuario.Text = dados.nome;
 
             // Limpa campos
@@ -124,6 +131,8 @@ namespace AssistenteLigacoes
             combostatus.Visible = true;
             alterarstatus.Visible = true;
             tabramal.Visible = true;
+
+            Telefone tel = new Telefone(163032);
 
         }
     }

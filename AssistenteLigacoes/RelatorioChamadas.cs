@@ -164,30 +164,6 @@ namespace AssistenteLigacoes
                 return;
             }
 
-            /// Carrega dados de exemplo
-            
-            // Limpa o grid
-            conteudorelatorio.Rows.Clear();
-
-            // Faz o download dos dados JSON
-            var json = new WebClient().DownloadString("https://raw.githubusercontent.com/joseantonnio/AssistenteLigacoes/master/Anatel/prefixos.json");
-
-            // Armazena os dados em uma array de saída
-            var saida = JsonConvert.DeserializeObject<List<Ramal>>(json);
-
-            // Cria um laço para percorrer os dados
-            foreach (Ramal s in saida)
-            {
-                // Converte de UTF8 para String
-                byte[] bytes = Encoding.Default.GetBytes(s.cidade);
-                s.cidade = Encoding.UTF8.GetString(bytes);
-
-                // Adiciona os dados no grid
-                string[] row = new string[] { s.prefixo, s.cidade, s.uf, s.operadora, s.tipo, s.pais };
-                conteudorelatorio.Rows.Add(row);
-
-            }
-
         }
 
         private void imprimerelatorio_Click(object sender, EventArgs e)
@@ -451,19 +427,6 @@ namespace AssistenteLigacoes
             }
 
         }
-
-    }
-
-    public class Ramal
-    {
-
-        public string prefixo { get; set; }
-        public string cidade { get; set; }
-        public string uf { get; set; }
-        public string operadora { get; set; }
-        public string tipo { get; set; }
-        public string pais { get; set; }
-
 
     }
 

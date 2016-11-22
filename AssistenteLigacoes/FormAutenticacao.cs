@@ -16,6 +16,8 @@ using MySql.Data.MySqlClient;
 // MetroFramework
 using MetroFramework.Forms;
 
+using System.Runtime.InteropServices;
+
 namespace AssistenteLigacoes
 {
     public partial class FormAutenticacao : MetroForm
@@ -24,28 +26,16 @@ namespace AssistenteLigacoes
         // Declara variavel do usuario
         Usuario dados;
 
-        // Declara uma variavel para verificar se o usuário é admin ou não
-        private bool isAdmin = false;
-
         public FormAutenticacao()
         {
             // Inicializa o FormAutenticacao
             InitializeComponent();
+
+            this.Focus();
+        
         }
 
-        private void useradmin_CheckedChanged(object sender, EventArgs e)
-        {
-            // Altera a variavel isAdmin para verdadeiro
-            isAdmin = true;
-        }
-
-        private void userdefault_CheckedChanged(object sender, EventArgs e)
-        {
-            // Altera a variavel isAdmin para falso
-            isAdmin = false;
-        }
-
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void entrar_Click(object sender, EventArgs e)
         {
 
             // Verifica se campos foram preenchidos
@@ -94,12 +84,6 @@ namespace AssistenteLigacoes
                 // Oculta o FormAutenticacao
                 Hide();
 
-                // Verifica se é administrador
-                if (dados.admin && isAdmin)
-                {
-                    MessageBox.Show("Usuário terá permissões de administrador!");
-                }
-
                 // Inicializa e exibe o FormPrincipal
                 FormPrincipal Principal = new FormPrincipal(this, dados);
                 Principal.Show();
@@ -118,14 +102,23 @@ namespace AssistenteLigacoes
             }
         }
 
-        private void FormAutenticacao_Load(object sender, EventArgs e)
+        private void password_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Enter)
+            {
+                entrar_Click(this, new EventArgs());
+            }
 
         }
 
-        private void FormAutenticacao_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormAutenticacao_Activated(object sender, EventArgs e)
         {
+            username.Focus();
+        }
 
+        private void password_Enter(object sender, EventArgs e)
+        {
+            password.SelectAll();
         }
     }
 }
