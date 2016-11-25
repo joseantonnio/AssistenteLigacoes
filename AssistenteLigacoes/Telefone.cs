@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data;
 using System.Threading.Tasks;
 
 // Importar JSON
@@ -66,6 +67,8 @@ namespace AssistenteLigacoes
                         // Converte de UTF8 para String
                         byte[] bytes = Encoding.Default.GetBytes(s.cidade);
                         s.cidade = Encoding.UTF8.GetString(bytes);
+                        bytes = Encoding.Default.GetBytes(s.operadora);
+                        s.operadora = Encoding.UTF8.GetString(bytes);
 
                         // Adiciona os dados no grid
                         this.cidade = s.cidade;
@@ -84,11 +87,39 @@ namespace AssistenteLigacoes
         }
 
         public int Prefixo { set { prefixo = value; } get { return prefixo; } }
-        public string Cidade { set { cidade = value; } get { return cidade; } }
-        public string Uf { set { uf = value; } get { return uf; } }
-        public string Operadora { set { operadora = value; } get { return operadora; } }
+        public string Cidade { set { cidade = value; } get { return cidade.ToUpper(); } }
+        public string Uf { set { uf = value; } get { return uf.ToUpper(); } }
+        public string Operadora {
+            set {
+                operadora = value;
+            }
+            get {
+                
+                if (operadora.Length > 18)
+                {
+                    string limit = new string(operadora.Take(15).ToArray());
+                    return limit.ToUpper() + "...";
+                } else
+                {
+                    return operadora.ToUpper();
+                }
+            }
+        }
         public int Tipo { set { tipo = value; } get { return tipo; } }
-        public string Pais { set { pais = value; } get { return pais; } }
+        public string Pais { set { pais = value; } get { return pais.ToUpper(); } }
+
+        // Metodo Busca Ramais
+        public DataTable BuscaTelefones()
+        {
+
+            DataTable results = new DataTable("telefones");
+
+            using (MySqlDataReader busca = conexao.comando("SELECT * FROM telefones", conecta).ExecuteReader())
+                results.Load(busca);
+
+            return results;
+
+        }
 
         //Método Recebe Ligacção
         public void RecebeLigacao()

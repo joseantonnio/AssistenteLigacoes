@@ -20,9 +20,15 @@ namespace AssistenteLigacoes
         // Declara uma variavel para armazenar o FormAutenticacao
         private FormAutenticacao anterior;
 
+        // Declara classes
+        private Ramal ramal;
+        private Usuario dados;
+
         
         public FormPrincipal(FormAutenticacao formulario, Usuario dados)
         {
+
+            this.dados = dados;
 
             // Inicializa o FormPrincipal
             InitializeComponent();
@@ -64,11 +70,15 @@ namespace AssistenteLigacoes
             }
 
             // Busca ramais do usuário
-            Ramal ramais = new Ramal();
+            Telefone telefones = new Telefone(0);
+            DataTable busca = telefones.BuscaTelefones();
 
-            List<List<string>> busca = ramais.BuscaRamais(dados.id);
+            // Limpa o combo
+            combotelefone.Items.Clear();
 
-            var r = 0;
+            // Percorre os resultados
+            foreach (DataRow row in busca.Rows)
+                combotelefone.Items.Add(row["prefixo"]);
 
         }
 
@@ -127,18 +137,92 @@ namespace AssistenteLigacoes
         private void selecionarramal_Click(object sender, EventArgs e)
         {
 
-            // Aqui vai chamar os metodos de ramal
-            selecionarramal.Image = Properties.Resources.cross;
-
-            labellogin.Visible = true;
-            labellogin.Text = "Ramal autenticado em " + DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString();
+            // Declara os valores necessários
+            int prefixo = int.Parse(combotelefone.GetItemText(combotelefone.SelectedItem));
+            int selecionado = int.Parse(comboramal.GetItemText(comboramal.SelectedItem));
             string autenticado = DateTime.Now.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss");
 
+            // Animação de loading
+            selecionarramal.Image = Properties.Resources.loading;
+
+            // Busca ramal do usuário
+            ramal = new Ramal(prefixo, selecionado);
+
+            // Altera as propriedades dos itens
+            labellogin.Visible = true;
             labelstatus.Visible = true;
             combostatus.Visible = true;
             alterarstatus.Visible = true;
             tabramal.Visible = true;
 
+            // Alterando valor das labels
+            labellogin.Text = "Ramal autenticado em " + DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString();
+            numerotelefone.Text = ramal.prefixo.ToString();
+            numeroramal.Text = ramal.numero.ToString();
+            ramaloperadora.Text = ramal.Operadora;
+            telefonecompleto.Text = ramal.prefixoMask + "-" + ramal.numero.ToString();
+            ramaltipo.Text = (ramal.tipo == 2)?"Fixo":"Móvel";
+            ramalcidade.Text = ramal.Cidade;
+            ramalestado.Text = ramal.Uf;
+
+
+            // Animação de loading
+            selecionarramal.Image = Properties.Resources.accept;
+
+        }
+
+        private void selecionartelefone_Click(object sender, EventArgs e)
+        {
+
+            // Pega o prefixo
+            int prefixo = int.Parse(combotelefone.GetItemText(combotelefone.SelectedItem));
+
+            // Animação de loading
+            selecionartelefone.Image = Properties.Resources.loading;
+
+            // Busca ramais do usuário
+            Ramal ramal = new Ramal(prefixo, 0);
+            DataTable busca = ramal.BuscaRamais(dados.id);
+
+            // Altera as propriedades dos itens
+            comboramal.Visible = true;
+            selecionarramal.Visible = true;
+            labelramalativo.Visible = true;
+
+            // Limpa o combo
+            comboramal.Items.Clear();
+
+            // Percorre os resultados
+            foreach (DataRow row in busca.Rows)
+            {
+
+                bool ativo = bool.Parse(row["ativo"].ToString());
+
+                if (ativo)
+                    comboramal.Items.Add(row["numero"]);
+
+            }
+
+            // Animação de loading
+            selecionartelefone.Image = Properties.Resources.connect;
+
+            // Bloqueia seleção de telefone
+            if (comboramal.Items.Count < 1)
+            {
+                combotelefone.Enabled = true;
+                selecionartelefone.Enabled = true;
+            }
+            else
+            {
+                combotelefone.Enabled = false;
+                selecionartelefone.Enabled = false;
+            }
+
+        }
+
+        private void comboramal_DropDown(object sender, EventArgs e)
+        {
+            comboramal.SelectedIndex = -1;
         }
     }
 }
