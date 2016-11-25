@@ -24,8 +24,8 @@ namespace AssistenteLigacoes
         public int tipo;
         public string pais;
 
-        private Conexao conexao;
-        private MySqlConnection conecta;
+        protected Conexao conexao;
+        protected MySqlConnection conecta;
 
         public Telefone(int prefixo)
         {
@@ -55,10 +55,10 @@ namespace AssistenteLigacoes
                 var json = new WebClient().DownloadString("https://raw.githubusercontent.com/joseantonnio/AssistenteLigacoes/master/Anatel/prefixos.json");
 
                 // Armazena os dados em uma array de saída
-                var saida = JsonConvert.DeserializeObject<List<Result>>(json);
+                var saida = JsonConvert.DeserializeObject<List<JSONResult>>(json);
 
                 // Cria um laço para percorrer os dados
-                foreach (Result s in saida)
+                foreach (JSONResult s in saida)
                 {
 
                     if (s.prefixo == prefixo.ToString())
@@ -122,7 +122,7 @@ namespace AssistenteLigacoes
 
     }
 
-    class Result
+    class JSONResult
     {
         public string prefixo { get; set; }
         public string cidade { get; set; }

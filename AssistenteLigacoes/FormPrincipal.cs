@@ -63,6 +63,13 @@ namespace AssistenteLigacoes
                 segurancaToolStripMenuItem.Dispose();
             }
 
+            // Busca ramais do usuário
+            Ramal ramais = new Ramal();
+
+            List<List<string>> busca = ramais.BuscaRamais(dados.id);
+
+            var r = 0;
+
         }
 
         private void FormPrincipal_Load(object sender, EventArgs e)
@@ -131,8 +138,6 @@ namespace AssistenteLigacoes
             combostatus.Visible = true;
             alterarstatus.Visible = true;
             tabramal.Visible = true;
-
-            Telefone tel = new Telefone(163032);
 
         }
     }
