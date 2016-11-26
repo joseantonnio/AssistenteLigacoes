@@ -26,7 +26,6 @@ namespace AssistenteLigacoes
         public bool autenticado;
 
         private Conexao conexao;
-        private MySqlConnection conecta;
 
         public Usuario(string usuario, string senha)
         {
@@ -36,20 +35,8 @@ namespace AssistenteLigacoes
             this.autenticado = false;
 
             conexao = new Conexao("assistente_ligacoes");
-            conecta = conexao.conecta();
 
-            // Abre conexão
-            try
-            {
-                conecta.Open();
-            }
-            catch
-            {
-                MessageBox.Show("Não foi possível conectar o banco de dados.", "Erro de conexão", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-
-            MySqlDataReader busca = conexao.comando("SELECT * FROM usuarios WHERE usuario = '" + Login + "' AND senha = '" + Senha + "'", conecta).ExecuteReader();
+            MySqlDataReader busca = conexao.comando("SELECT * FROM usuarios WHERE usuario = '" + Login + "' AND senha = '" + Senha + "'").ExecuteReader();
 
             if (busca.HasRows)
             {

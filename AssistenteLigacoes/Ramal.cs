@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Windows.Forms;
 using System.Data;
 using System.Threading.Tasks;
 
@@ -18,9 +17,27 @@ namespace AssistenteLigacoes
         public bool ativo;
         public int responsavel;
 
-        public Ramal(int prefixo, int sufixo) : base (prefixo)
+        public Ramal(int prefixo, int sufixo, int id) : base (prefixo)
         {
+
             this.numero = sufixo;
+            this.status = 0;
+            this.ativo = false;
+            this.responsavel = 0;
+
+            DataTable busca = conexao.busca("SELECT * FROM ramais WHERE responsavel = " + id + " AND prefixo = " + prefixo + " LIMIT 1", "ramais", conexao);
+
+            // Percorre os resultados
+            foreach (DataRow row in busca.Rows)
+            {
+
+                this.status = int.Parse(row["status"].ToString());
+                this.ativo = bool.Parse(row["ativo"].ToString());
+                this.responsavel = id;
+
+            }
+
+
         }
 
         public int Numero { set { numero = value; } get { return numero; } }
@@ -40,18 +57,22 @@ namespace AssistenteLigacoes
         public DataTable BuscaRamais(int id)
         {
 
-            DataTable results = new DataTable("ramais");
-
-            using (MySqlDataReader busca = conexao.comando("SELECT * FROM ramais WHERE responsavel = " + id + " AND prefixo = " + prefixo, conecta).ExecuteReader())
-                results.Load(busca);
-
-            return results;
+            return conexao.busca("SELECT * FROM ramais WHERE responsavel = " + id + " AND prefixo = " + prefixo, "ramais", conexao);
 
         }
 
         //Método Busca Ligacoes
-        public void BuscaLigacoes()
+        public DataTable BuscaLigacoes(bool ultima)
         {
+
+            string sql;
+
+            if (ultima)
+                sql = "SELECT * FROM chamadas WHERE telefone = " + prefixo + " AND ramal = " + numero + " ORDER BY c_id DESC LIMIT 1";
+            else
+                sql = "SELECT * FROM chamadas WHERE telefone = " + prefixo + " AND ramal = " + numero;
+
+            return conexao.busca(sql, "ramais", conexao);
 
         }
 

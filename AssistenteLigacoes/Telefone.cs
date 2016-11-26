@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Windows.Forms;
 using System.Data;
 using System.Threading.Tasks;
 
@@ -24,65 +23,21 @@ namespace AssistenteLigacoes
         public string operadora;
         public int tipo;
         public string pais;
-
         protected Conexao conexao;
-        protected MySqlConnection conecta;
 
         public Telefone(int prefixo)
         {
 
             this.prefixo = prefixo;
+            this.cidade = "";
+            this.uf = "";
+            this.operadora = "";
+            this.tipo = 0;
+            this.pais = "";
 
             conexao = new Conexao("assistente_ligacoes");
-            conecta = conexao.conecta();
 
-            // Abre conexão
-            try
-            {
-                conecta.Open();
-            }
-            catch
-            {
-                MessageBox.Show("Não foi possível conectar o banco de dados.", "Erro de conexão", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-
-            MySqlDataReader busca = conexao.comando("SELECT * FROM telefones WHERE prefixo = " + Prefixo, conecta).ExecuteReader();
-
-            if (busca.HasRows)
-            {
-
-                // Faz o download dos dados JSON
-                var json = new WebClient().DownloadString("https://raw.githubusercontent.com/joseantonnio/AssistenteLigacoes/master/Anatel/prefixos.json");
-
-                // Armazena os dados em uma array de saída
-                var saida = JsonConvert.DeserializeObject<List<JSONResult>>(json);
-
-                // Cria um laço para percorrer os dados
-                foreach (JSONResult s in saida)
-                {
-
-                    if (s.prefixo == prefixo.ToString())
-                    {
-                        // Converte de UTF8 para String
-                        byte[] bytes = Encoding.Default.GetBytes(s.cidade);
-                        s.cidade = Encoding.UTF8.GetString(bytes);
-                        bytes = Encoding.Default.GetBytes(s.operadora);
-                        s.operadora = Encoding.UTF8.GetString(bytes);
-
-                        // Adiciona os dados no grid
-                        this.cidade = s.cidade;
-                        this.uf = s.uf;
-                        this.operadora = s.operadora;
-                        this.tipo = s.tipo;
-                        this.pais = s.pais;
-                    }
-
-                }
-            }
-
-            // Limpa a busca
-            busca.Close();
+            consultaJson();
 
         }
 
@@ -94,15 +49,17 @@ namespace AssistenteLigacoes
                 operadora = value;
             }
             get {
-                
+
                 if (operadora.Length > 18)
                 {
                     string limit = new string(operadora.Take(15).ToArray());
                     return limit.ToUpper() + "...";
-                } else
+                }
+                else
                 {
                     return operadora.ToUpper();
                 }
+                
             }
         }
         public int Tipo { set { tipo = value; } get { return tipo; } }
@@ -112,12 +69,7 @@ namespace AssistenteLigacoes
         public DataTable BuscaTelefones()
         {
 
-            DataTable results = new DataTable("telefones");
-
-            using (MySqlDataReader busca = conexao.comando("SELECT * FROM telefones", conecta).ExecuteReader())
-                results.Load(busca);
-
-            return results;
+            return conexao.busca("SELECT * FROM telefones", "telefones", conexao);
 
         }
 
@@ -148,6 +100,34 @@ namespace AssistenteLigacoes
         // Busca prefixo na Anatel
         public void consultaJson()
         {
+
+            // Faz o download dos dados JSON
+            var json = new WebClient().DownloadString("https://raw.githubusercontent.com/joseantonnio/AssistenteLigacoes/master/Anatel/prefixos.json");
+
+            // Armazena os dados em uma array de saída
+            var saida = JsonConvert.DeserializeObject<List<JSONResult>>(json);
+
+            // Cria um laço para percorrer os dados
+            foreach (JSONResult s in saida)
+            {
+
+                if (s.prefixo == prefixo.ToString())
+                {
+                    // Converte de UTF8 para String
+                    byte[] bytes = Encoding.Default.GetBytes(s.cidade);
+                    s.cidade = Encoding.UTF8.GetString(bytes);
+                    bytes = Encoding.Default.GetBytes(s.operadora);
+                    s.operadora = Encoding.UTF8.GetString(bytes);
+
+                    // Adiciona os dados no grid
+                    this.cidade = s.cidade;
+                    this.uf = s.uf;
+                    this.operadora = s.operadora;
+                    this.tipo = s.tipo;
+                    this.pais = s.pais;
+                }
+
+            }
 
         }
 
