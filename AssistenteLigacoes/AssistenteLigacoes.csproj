@@ -52,6 +52,7 @@
       <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
       <Private>True</Private>
@@ -652,6 +653,9 @@
     <None Include="Assets\ButtonIcons\zone_money.png" />
     <None Include="Assets\ButtonIcons\zones.png" />
     <None Include="Assets\ButtonIcons\loading.gif" />
+    <None Include="Assets\ButtonIcons\phone.png" />
+    <None Include="Assets\ButtonIcons\shutdown.png" />
+    <None Include="Assets\ButtonIcons\shutdown.gif" />
     <Content Include="icon.ico" />
     <Content Include="MetroFramework.txt" />
   </ItemGroup>

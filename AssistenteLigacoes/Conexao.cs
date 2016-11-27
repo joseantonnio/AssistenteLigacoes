@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace AssistenteLigacoes
 {
-    class Conexao
+    public class Conexao
     {
 
         private string host;

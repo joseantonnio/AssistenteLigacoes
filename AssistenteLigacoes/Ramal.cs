@@ -10,12 +10,13 @@ using MySql.Data.MySqlClient;
 
 namespace AssistenteLigacoes
 {
-    class Ramal : Telefone
+    public class Ramal : Telefone
     {
         public int numero;
         public int status;
         public bool ativo;
         public int responsavel;
+        public int ultima;
 
         public Ramal(int prefixo, int sufixo, int id) : base (prefixo)
         {
@@ -25,7 +26,7 @@ namespace AssistenteLigacoes
             this.ativo = false;
             this.responsavel = 0;
 
-            DataTable busca = conexao.busca("SELECT * FROM ramais WHERE responsavel = " + id + " AND prefixo = " + prefixo + " LIMIT 1", "ramais", conexao);
+            DataTable busca = conexao.busca("SELECT * FROM ramais WHERE responsavel = " + id + " AND prefixo = " + prefixo + " AND numero = " + numero + " LIMIT 1", "ramais", conexao);
 
             // Percorre os resultados
             foreach (DataRow row in busca.Rows)
@@ -44,7 +45,7 @@ namespace AssistenteLigacoes
         public int Status { set { status = value; } get { return status; } }
         public bool Ativo { set { ativo = value; } get { return ativo; } }
         public int Responsavel { set { responsavel = value; } get { return responsavel; } }
-        public string prefixoMask {
+        public string PrefixoMask {
             get {
                 string convertido = prefixo.ToString();
                 string ddd = new string(convertido.Take(2).ToArray());
@@ -54,23 +55,56 @@ namespace AssistenteLigacoes
         }
 
         // Metodo Busca Ramais
-        public DataTable BuscaRamais(int id)
+        public DataTable BuscaRamais(int id, bool todos)
         {
 
-            return conexao.busca("SELECT * FROM ramais WHERE responsavel = " + id + " AND prefixo = " + prefixo, "ramais", conexao);
+            if (todos)
+                return conexao.busca("SELECT * FROM ramais WHERE prefixo = " + prefixo, "ramais", conexao);
+            else
+                return conexao.busca("SELECT * FROM ramais WHERE responsavel = " + id + " AND prefixo = " + prefixo, "ramais", conexao);
 
         }
 
         //Método Busca Ligacoes
-        public DataTable BuscaLigacoes(bool ultima)
+        public DataTable BuscaLigacoes(bool ultima, string num = "", string tipo = "", string de = "", string ate= "")
         {
 
             string sql;
 
             if (ultima)
+            {
                 sql = "SELECT * FROM chamadas WHERE telefone = " + prefixo + " AND ramal = " + numero + " ORDER BY c_id DESC LIMIT 1";
+            }
             else
-                sql = "SELECT * FROM chamadas WHERE telefone = " + prefixo + " AND ramal = " + numero;
+            {
+
+                if (num == "" && tipo == "" && de == "" && ate == "")
+                {
+                    sql = "SELECT * FROM chamadas WHERE telefone = " + prefixo + " AND ramal = " + numero;
+                }
+                else
+                {
+                    sql = "SELECT * FROM chamadas WHERE telefone = " + prefixo;
+
+                    if (num != "")
+                        sql += " AND ramal = " + num;
+
+                    if (tipo != "")
+                        sql += " AND tipo = " + tipo;
+
+                    if (de != "")
+                        sql += " AND inicio > DATE('" + de + "')";
+
+                    if (de != "" && ate != "")
+                        sql += " AND";
+
+                    if (ate != "")
+                        sql += " fim < DATE('" + ate + "')";
+
+                }
+
+            }
+                
 
             return conexao.busca(sql, "ramais", conexao);
 
@@ -84,8 +118,44 @@ namespace AssistenteLigacoes
 
 
         //Método Busca Destino
-        public void buscaDestino()
+        public void BuscaDestino()
         {
+
+        }
+
+        public bool AtualizarStatus(int novo)
+        {
+            if (ativo)
+            {
+
+                conexao.comando("UPDATE ramais SET status = " + novo + " WHERE numero = " + numero + " AND prefixo = " + prefixo + " AND responsavel = " + responsavel).ExecuteNonQuery();
+                return true;
+
+            }
+
+            return false;
+            
+        }
+
+        public void RegistrarAcesso()
+        {
+            
+            conexao.comando("UPDATE ramais SET ultimo_acesso = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "' WHERE numero = " + numero + " AND prefixo = " + prefixo + " AND responsavel = " + responsavel).ExecuteNonQuery();
+
+        }
+
+        public bool InserirObservacao(string observacao)
+        {
+
+            int exec = conexao.comando("UPDATE chamadas SET observacoes = '" + observacao + "' WHERE c_id = " + ultima).ExecuteNonQuery();
+
+            if (exec < 1)
+            {
+                return false;
+            } else
+            {
+                return true;
+            }
 
         }
 

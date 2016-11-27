@@ -136,9 +136,6 @@
   <data name="layer_treansparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\layer_treansparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trophy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\trophy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="media_player_small_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\media_player_small_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,6 +147,12 @@
   </data>
   <data name="drink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\drink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_osx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\application_osx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_osx_terminal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\application_osx_terminal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="page_white_ruby" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_ruby.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,6 +168,9 @@
   </data>
   <data name="text_linespacing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_linespacing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emoticon_unhappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\emoticon_unhappy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="text_list_bullets" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_list_bullets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,17 +190,23 @@
   <data name="magnet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\magnet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="computer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="application_view_tile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\application_view_tile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sort_number" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\sort_number.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ruler_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\ruler_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="zone_money" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\zone_money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="safe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\safe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="money_pound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\money_pound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page_white_find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_white_find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cross_octagon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\cross_octagon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,20 +214,20 @@
   <data name="page_white_picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\cursor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paintbrush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\paintbrush.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ipod_cast" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\ipod_cast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shape_move_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\shape_move_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rss" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\rss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="drive_link" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\drive_link.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="music_beam" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\music_beam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shape_move_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\shape_move_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="error1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,26 +241,23 @@
   <data name="drive_network" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\drive_network.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="text_allcaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\text_allcaps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="text_align_center" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_align_center.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_white_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_white_error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="text_subscript" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\text_subscript.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="page_white_flash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_flash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_2_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_2_copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="table" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\arrow_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="application_view_gallery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_view_gallery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,17 +271,14 @@
   <data name="calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\grid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="crown_silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\crown_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="weather_lightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\weather_lightning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="page_code" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_code.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\wall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="comment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\comment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,20 +289,23 @@
   <data name="calendar_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\calendar_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="house" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\house.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow_inout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\arrow_inout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="key" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sort_date" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\sort_date.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\cd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sort_rating" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\sort_rating.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="smiley_cry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\smiley_cry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart_half" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\heart_half.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="application_key" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -307,11 +316,8 @@
   <data name="page_white_dvd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_dvd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="new" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="text_align_justify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\text_align_justify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="weather_clouds" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\weather_clouds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,9 +337,6 @@
   <data name="television" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\television.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_white_swoosh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_white_swoosh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="arrow_divide" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\arrow_divide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -342,6 +345,9 @@
   </data>
   <data name="exclamation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\exclamation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bluetooth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\bluetooth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="link_break" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\link_break.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,17 +364,14 @@
   <data name="zones" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\zones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_white_stack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_white_stack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="star_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\star_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="emoticon_smile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\emoticon_smile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text_align_justify" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\text_align_justify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="smiley_roll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\smiley_roll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ui_tab_content" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\ui_tab_content.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -376,8 +379,8 @@
   <data name="smiley_cool" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\smiley_cool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="doc_music" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\doc_music.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="umbrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\umbrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="text_padding_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_padding_top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -385,17 +388,11 @@
   <data name="application_view_detail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_view_detail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_white_get" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_white_get.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="bookmark_book" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\bookmark_book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stamp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\stamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="paste_word" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\paste_word.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="page_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -412,9 +409,6 @@
   <data name="image_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\image_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text_bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\text_bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="male" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\male.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -423,6 +417,9 @@
   </data>
   <data name="application_lightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_lightning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drink_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\drink_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="heart_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\heart_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -436,11 +433,8 @@
   <data name="doc_illustrator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\doc_illustrator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="feed_document" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\feed_document.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="emoticon_tongue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\emoticon_tongue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="text_smallcaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\text_smallcaps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="world" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\world.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -460,11 +454,20 @@
   <data name="magnifier_zoom_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\magnifier_zoom_in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="emoticon_waii" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\emoticon_waii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="neutral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\neutral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shape_flip_horizontal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\shape_flip_horizontal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drive_cd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\drive_cd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="weather_snow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\weather_snow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="databases" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\databases.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -474,6 +477,9 @@
   </data>
   <data name="find" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\photos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ui_tab_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\ui_tab_side.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -487,23 +493,17 @@
   <data name="page_white_zip" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_zip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="slide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\slide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sport_shuttlecock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\sport_shuttlecock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="book_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\book_open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="application_view_tile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\application_view_tile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chart_pie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\chart_pie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="drive_rename" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\drive_rename.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sport_shuttlecock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\sport_shuttlecock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="text_indent_remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_indent_remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -532,6 +532,9 @@
   <data name="desktop_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\desktop_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="crown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\crown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="application_go" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_go.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -544,8 +547,8 @@
   <data name="accept1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\accept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="control_wheel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\control_wheel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="piano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\piano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sort_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\sort_disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -553,8 +556,8 @@
   <data name="text_list_numbers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_list_numbers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="application_side_tree" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\application_side_tree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="application_side_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\application_side_list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sockets" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\sockets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -564,15 +567,6 @@
   </data>
   <data name="books" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\books.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="application_get" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\application_get.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plaing_card" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\plaing_card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="umbrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\umbrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="emoticon_grin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\emoticon_grin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -586,14 +580,11 @@
   <data name="counter_count_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\counter_count_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hammer_screwdriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\hammer_screwdriver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="doc_excel_csv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\doc_excel_csv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="money_yen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\money_yen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="layout_select_content" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\layout_select_content.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="slide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\slide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\arrow_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -607,14 +598,8 @@
   <data name="socket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\socket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wall_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\wall_disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="user_business" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\user_business.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wand" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\wand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="layout_select_footer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\layout_select_footer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -622,11 +607,11 @@
   <data name="drive_cd_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\drive_cd_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bookmark_book_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\bookmark_book_open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="application_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sport_8ball" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\sport_8ball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="money" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -646,23 +631,20 @@
   <data name="doc_offlice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\doc_offlice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="feed_ballon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\feed_ballon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="doc_photoshop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\doc_photoshop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="door" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wall_brick" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\wall_brick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="text_align_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\text_align_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="text_strikethrough" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_strikethrough.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="heart_half" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\heart_half.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="text_align_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\text_align_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="counter_reset" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\counter_reset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -673,29 +655,26 @@
   <data name="smiley_mad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\smiley_mad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="application_side_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\application_side_list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shape_aling_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\shape_aling_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bookmark_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\bookmark_folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="paper_bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\paper_bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="application_side_expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\application_side_expand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\wand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="projection_screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\projection_screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_white_database" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_white_database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_white_get" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_white_get.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cake" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\cake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flag_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\flag_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -705,9 +684,6 @@
   </data>
   <data name="doc_resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\doc_resize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="text_horizontalrule" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\text_horizontalrule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\shield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -724,8 +700,8 @@
   <data name="film" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\film.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="grid_dot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\grid_dot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="text_italic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\text_italic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="female" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\female.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -739,8 +715,8 @@
   <data name="application_home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="palette" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\palette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sport_basketball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\sport_basketball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="layout_join" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\layout_join.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -751,38 +727,38 @@
   <data name="text_dropcaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_dropcaps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bell" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\bell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="doc_tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\doc_tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_white_paintbrush" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_white_paintbrush.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cross_octagon_fram" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\cross_octagon_fram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wall_brick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\wall_brick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="plugin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\plugin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="layout_select_sidebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\layout_select_sidebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="star_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\star_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text_subscript" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\text_subscript.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="text_bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\text_bold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="telephone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\telephone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="plug" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\plug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\bell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="text_heading_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_heading_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -793,26 +769,20 @@
   <data name="bullet_key" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\bullet_key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="attach_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\attach_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sport_soccer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\sport_soccer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\arrow_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="heart_break" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\heart_break.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wait" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\wait.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bullet_add_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\bullet_add_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shape_handles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\shape_handles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sort_price" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\sort_price.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="doc_excel_table" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\doc_excel_table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -823,11 +793,17 @@
   <data name="page_white_cup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_cup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="UserAvatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\UserAvatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="page_white_freehand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_freehand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="page_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medal_gold_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\medal_gold_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="html" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\html.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -844,20 +820,20 @@
   <data name="page_white_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="crown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\crown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="drawer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\drawer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text_kerning" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\text_kerning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="drive_cd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\drive_cd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="heart_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\heart_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="coins" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\coins.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="layout_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\layout_select.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -889,8 +865,8 @@
   <data name="application_link" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_link.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="paintbrush" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\paintbrush.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\pin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rocket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\rocket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -898,8 +874,8 @@
   <data name="drive_disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\drive_disk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shape_aling_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\shape_aling_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ruler_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\ruler_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="envelope_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\envelope_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -910,14 +886,14 @@
   <data name="hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\hammer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tag_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\tag_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="hand_point" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\hand_point.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page_excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="magnifier" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\magnifier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -925,20 +901,20 @@
   <data name="bookmark_document" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\bookmark_document.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text_allcaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\text_allcaps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="attach" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\attach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="money_euro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\money_euro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\disk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_white_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_white_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="asterisk_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\asterisk_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user_thief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\user_thief.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\printer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -949,41 +925,26 @@
   <data name="sitemap" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\sitemap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_white_database" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_white_database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="money_dollar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\money_dollar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="text_kerning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\text_kerning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="application_osx" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\application_osx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="text_columns" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\text_columns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shape_move_front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\shape_move_front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_white_php" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_white_php.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\mouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="smiley_fat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\smiley_fat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_thief_baldie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\user_thief_baldie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trophy_bronze" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\trophy_bronze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lightbulb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\lightbulb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="blueprint" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\blueprint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="book_previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\book_previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="zone_money" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\zone_money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clipboard_paste_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\clipboard_paste_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1015,17 +976,17 @@
   <data name="calendar_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\calendar_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bandaid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\bandaid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="text_letter_omega" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_letter_omega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="films" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\films.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user_thief" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\user_thief.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="package" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\package.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="attach_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\attach_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shape_group" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\shape_group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1057,8 +1018,11 @@
   <data name="doc_film" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\doc_film.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="clipboard_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\clipboard_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="emoticon_happy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\emoticon_happy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1066,41 +1030,35 @@
   <data name="doc_stand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\doc_stand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sort_quantity" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\sort_quantity.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wait" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\wait.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="email_open_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\email_open_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="emoticon_wink" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\emoticon_wink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="crown_silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\crown_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wall_disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\wall_disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="layout_header_footer_3_mix" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\layout_header_footer_3_mix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\pin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="lock_unlock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\lock_unlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trophy_bronze" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\trophy_bronze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="database" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sport_tennis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\sport_tennis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="webcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\webcam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="group" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ui_combo_box" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\ui_combo_box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="application_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\application_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="layout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\layout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1120,8 +1078,8 @@
   <data name="chart_curve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\chart_curve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="slides_stack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\slides_stack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="disconnect" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\disconnect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1132,8 +1090,11 @@
   <data name="chart_line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\chart_line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="application_get" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\application_get.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hammer_screwdriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\hammer_screwdriver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\image_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1141,8 +1102,8 @@
   <data name="doc_shred" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\doc_shred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="emoticon_smile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\emoticon_smile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="feed_document" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\feed_document.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="direction" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\direction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1150,20 +1111,17 @@
   <data name="layout_split" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\layout_split.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bullet_add_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\bullet_add_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="money_yen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\money_yen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="text_padding_bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_padding_bottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bug" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\bug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="application_double" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\application_double.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="timeline_marker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\timeline_marker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="smiley_roll" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\smiley_roll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1177,17 +1135,20 @@
   <data name="award_star_gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\award_star_gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="contrast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\contrast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="keyboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\keyboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="control_end" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\control_end.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_white_cplusplus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_white_cplusplus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="doc_music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\doc_music.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="doc_excel_csv" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\doc_excel_csv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="control_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\control_start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="weather_cloudy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\weather_cloudy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1195,26 +1156,26 @@
   <data name="chart_organisation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\chart_organisation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow_inout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\arrow_inout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="page_white_tux" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_tux.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="application_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\application_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="house" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\house.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ui_text_field_hidden" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\ui_text_field_hidden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="application_view_xp_terminal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\application_view_xp_terminal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow_undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\arrow_undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\bomb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text_smallcaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\text_smallcaps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="package" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\package.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="page_white_width" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_width.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1234,8 +1195,8 @@
   <data name="arrow_merge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\arrow_merge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ruler_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\ruler_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sport_tennis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\sport_tennis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="zone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\zone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1243,14 +1204,14 @@
   <data name="cog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\cog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ui_saccordion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\ui_saccordion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="money_dollar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\money_dollar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="newspaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\newspaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="plaing_card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\plaing_card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ui_text_field_password" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\ui_text_field_password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1258,8 +1219,8 @@
   <data name="text_lowercase" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_lowercase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="color_swatch_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\color_swatch_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_white_paintbrush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_white_paintbrush.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="text_align_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\text_align_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1276,11 +1237,8 @@
   <data name="page_lightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_lightning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hand" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\hand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="webcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\webcam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="accept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\accept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="page_white_paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_paste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1288,20 +1246,14 @@
   <data name="application_view_xp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_view_xp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="control_eject" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\control_eject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="heart_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\heart_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paste_word" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\paste_word.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shape_move_backwards" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\shape_move_backwards.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chart_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\chart_bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\picture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="buildings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\buildings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1312,14 +1264,20 @@
   <data name="vcard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\vcard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text_letterspacing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\text_letterspacing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="color_swatch_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\color_swatch_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shape_aling_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\shape_aling_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\shutdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ipod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\ipod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tab" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\tab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="piano" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\piano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="compress" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\compress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1336,17 +1294,20 @@
   <data name="shape_aling_center" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\shape_aling_center.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="safe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\safe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="emoticon_tongue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\emoticon_tongue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="counter_count" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\counter_count.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UserAvatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\UserAvatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="control_eject" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\control_eject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_white_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_white_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_thief_baldie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\user_thief_baldie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ruby" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\ruby.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1360,17 +1321,23 @@
   <data name="monitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\monitor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="inbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\inbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\wall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="layout_split_vertical" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\layout_split_vertical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="application_view_icons" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_view_icons.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="clipboard_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\clipboard_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\camera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\disk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="basket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\basket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1381,8 +1348,8 @@
   <data name="page_white_wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="application_double" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\application_double.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="target" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\target.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="switch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\switch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1402,11 +1369,11 @@
   <data name="control_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\control_play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shape_aling_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\shape_aling_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trophy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\trophy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="doc_table" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\doc_table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_white_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_white_error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="application_cascade" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_cascade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1420,14 +1387,23 @@
   <data name="nuclear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\nuclear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\grid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="page_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telephone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\telephone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="textfield_rename" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\textfield_rename.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="car" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\car.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\hand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layout_select_sidebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\layout_select_sidebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1450,8 +1426,11 @@
   <data name="mobile_phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\mobile_phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\camera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="application_side_expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\application_side_expand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\bug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="compass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\compass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1459,20 +1438,26 @@
   <data name="shape_aling_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\shape_aling_top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sort_quantity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\sort_quantity.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_wheel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\control_wheel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="door_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\door_in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="page_white_vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_vector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text_italic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\text_italic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="text_letterspacing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\text_letterspacing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="drive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\drive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="drive_link" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\drive_link.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="slides_stack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\slides_stack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sound_note" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\sound_note.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1480,14 +1465,17 @@
   <data name="sum_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\sum_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bluetooth" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\bluetooth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tag_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\tag_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="feed_ballon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\feed_ballon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="book_previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\book_previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ipod_cast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\ipod_cast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doc_table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\doc_table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pipette" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\pipette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1495,8 +1483,11 @@
   <data name="shape_move_forwards" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\shape_move_forwards.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\cd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="asterisk_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\asterisk_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_horizontalrule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\text_horizontalrule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="control_rewind" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\control_rewind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1504,29 +1495,35 @@
   <data name="smiley_yell" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\smiley_yell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="control_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\control_start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sport_soccer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\sport_soccer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pilcrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\pilcrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow_undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\arrow_undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paper_bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\paper_bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="car" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\car.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="funnel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\funnel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="doc_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\doc_page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="inbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\inbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="emoticon_unhappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\emoticon_unhappy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sport_8ball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\sport_8ball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medal_gold_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\medal_gold_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_white_stack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_white_stack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="layout_join_vertical" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\layout_join_vertical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_side_tree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\application_side_tree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="application_view_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_view_list.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1537,17 +1534,20 @@
   <data name="page_white_word" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_word.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="emoticon_wink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\emoticon_wink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\selection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ipod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\ipod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sport_basketball" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\sport_basketball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="palette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\palette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="note" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\note.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ruler_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\ruler_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="doc_text_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\doc_text_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1555,8 +1555,8 @@
   <data name="cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="contrast" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\contrast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="emoticon_waii" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\emoticon_waii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_silhouette" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\user_silhouette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1570,29 +1570,32 @@
   <data name="rainbow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\rainbow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\cursor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="application_view_columns" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\application_view_columns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sport_golf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\sport_golf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_white_php" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_white_php.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="smiley_fat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\smiley_fat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bookmark_book_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\bookmark_book_open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ui_combo_box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\ui_combo_box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="slides" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\slides.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shape_aling_bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\shape_aling_bottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="application_view_xp_terminal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\application_view_xp_terminal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chart_pie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\chart_pie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ui_saccordion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\ui_saccordion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="page_white_find" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\page_white_find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_2_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_2_copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="paste_plain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\paste_plain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1600,23 +1603,23 @@
   <data name="bullet_add_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\bullet_add_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="photos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\photos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="text_columns" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\text_columns.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="application_osx_terminal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\application_osx_terminal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_white_swoosh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_white_swoosh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="drink_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\drink_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grid_dot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\grid_dot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="neutral" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\neutral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="page_white_cplusplus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\page_white_cplusplus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bandaid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\bandaid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sort_date" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\sort_date.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shape_flip_horizontal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\shape_flip_horizontal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow_join" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\arrow_join.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1630,11 +1633,11 @@
   <data name="bin_closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\bin_closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="accept" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\accept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="layout_select_content" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\layout_select_content.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="databases" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\databases.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shape_move_front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\shape_move_front.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="trophy_silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\trophy_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1648,17 +1651,23 @@
   <data name="email_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\email_open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="target" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\target.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shape_aling_bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\shape_aling_bottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ruler_crop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\ruler_crop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="book_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\book_open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\sound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doc_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\doc_page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1666,7 +1675,7 @@
   <data name="page_white_star" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\ButtonIcons\page_white_star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\ButtonIcons\loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shutdown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\ButtonIcons\shutdown.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

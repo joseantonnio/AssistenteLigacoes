@@ -30,12 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RelatorioChamadas));
             this.conteudorelatorio = new System.Windows.Forms.DataGridView();
-            this.destino = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tempo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.operadoradestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cidadedestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelramal = new System.Windows.Forms.Label();
-            this.ramalconsulta = new System.Windows.Forms.MaskedTextBox();
             this.labelchamadas = new System.Windows.Forms.Label();
             this.tipochamada = new System.Windows.Forms.ComboBox();
             this.dataInicial = new System.Windows.Forms.MaskedTextBox();
@@ -50,6 +45,7 @@
             this.printrelatorio = new System.Drawing.Printing.PrintDocument();
             this.previewrelatorio = new System.Windows.Forms.PrintPreviewDialog();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.ramalconsulta = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.conteudorelatorio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,11 +58,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.conteudorelatorio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.conteudorelatorio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.conteudorelatorio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.destino,
-            this.tempo,
-            this.operadoradestino,
-            this.cidadedestino});
             this.conteudorelatorio.Location = new System.Drawing.Point(20, 110);
             this.conteudorelatorio.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
             this.conteudorelatorio.Name = "conteudorelatorio";
@@ -74,58 +65,21 @@
             this.conteudorelatorio.Size = new System.Drawing.Size(1014, 398);
             this.conteudorelatorio.TabIndex = 0;
             // 
-            // destino
-            // 
-            this.destino.HeaderText = "Destino";
-            this.destino.Name = "destino";
-            this.destino.ReadOnly = true;
-            this.destino.Width = 120;
-            // 
-            // tempo
-            // 
-            this.tempo.HeaderText = "Duração";
-            this.tempo.Name = "tempo";
-            this.tempo.ReadOnly = true;
-            this.tempo.Width = 150;
-            // 
-            // operadoradestino
-            // 
-            this.operadoradestino.HeaderText = "Operadora de Destino";
-            this.operadoradestino.Name = "operadoradestino";
-            this.operadoradestino.ReadOnly = true;
-            this.operadoradestino.Width = 200;
-            // 
-            // cidadedestino
-            // 
-            this.cidadedestino.HeaderText = "Cidade de Destino";
-            this.cidadedestino.Name = "cidadedestino";
-            this.cidadedestino.ReadOnly = true;
-            this.cidadedestino.Width = 250;
-            // 
             // labelramal
             // 
             this.labelramal.AutoSize = true;
             this.labelramal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelramal.Location = new System.Drawing.Point(22, 66);
+            this.labelramal.Location = new System.Drawing.Point(760, 66);
             this.labelramal.Name = "labelramal";
             this.labelramal.Size = new System.Drawing.Size(52, 17);
             this.labelramal.TabIndex = 1;
             this.labelramal.Text = "Ramal:";
             // 
-            // ramalconsulta
-            // 
-            this.ramalconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ramalconsulta.Location = new System.Drawing.Point(80, 63);
-            this.ramalconsulta.Mask = "0000";
-            this.ramalconsulta.Name = "ramalconsulta";
-            this.ramalconsulta.Size = new System.Drawing.Size(149, 23);
-            this.ramalconsulta.TabIndex = 1;
-            // 
             // labelchamadas
             // 
             this.labelchamadas.AutoSize = true;
             this.labelchamadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelchamadas.Location = new System.Drawing.Point(235, 66);
+            this.labelchamadas.Location = new System.Drawing.Point(23, 66);
             this.labelchamadas.Name = "labelchamadas";
             this.labelchamadas.Size = new System.Drawing.Size(79, 17);
             this.labelchamadas.TabIndex = 3;
@@ -134,16 +88,16 @@
             // tipochamada
             // 
             this.tipochamada.AutoCompleteCustomSource.AddRange(new string[] {
-            "Realizadas",
-            "Atendidas",
-            "Perdidas"});
+            "Perdidas",
+            "Recebidas",
+            "Realizadas"});
             this.tipochamada.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tipochamada.FormattingEnabled = true;
             this.tipochamada.Items.AddRange(new object[] {
             "Atendidas",
             "Perdidas",
             "Realizadas"});
-            this.tipochamada.Location = new System.Drawing.Point(320, 63);
+            this.tipochamada.Location = new System.Drawing.Point(108, 63);
             this.tipochamada.Name = "tipochamada";
             this.tipochamada.Size = new System.Drawing.Size(206, 24);
             this.tipochamada.TabIndex = 2;
@@ -152,7 +106,7 @@
             // dataInicial
             // 
             this.dataInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataInicial.Location = new System.Drawing.Point(568, 63);
+            this.dataInicial.Location = new System.Drawing.Point(356, 63);
             this.dataInicial.Mask = "00/00/0000 90:00:00";
             this.dataInicial.Name = "dataInicial";
             this.dataInicial.Size = new System.Drawing.Size(171, 23);
@@ -164,7 +118,7 @@
             // 
             this.labelde.AutoSize = true;
             this.labelde.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelde.Location = new System.Drawing.Point(532, 66);
+            this.labelde.Location = new System.Drawing.Point(320, 66);
             this.labelde.Name = "labelde";
             this.labelde.Size = new System.Drawing.Size(30, 17);
             this.labelde.TabIndex = 5;
@@ -173,7 +127,7 @@
             // dataFinal
             // 
             this.dataFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataFinal.Location = new System.Drawing.Point(784, 63);
+            this.dataFinal.Location = new System.Drawing.Point(572, 63);
             this.dataFinal.Mask = "00/00/0000 90:00:00";
             this.dataFinal.Name = "dataFinal";
             this.dataFinal.Size = new System.Drawing.Size(182, 23);
@@ -185,7 +139,7 @@
             // 
             this.labelate.AutoSize = true;
             this.labelate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelate.Location = new System.Drawing.Point(745, 66);
+            this.labelate.Location = new System.Drawing.Point(533, 66);
             this.labelate.Name = "labelate";
             this.labelate.Size = new System.Drawing.Size(33, 17);
             this.labelate.TabIndex = 7;
@@ -193,7 +147,7 @@
             // 
             // calendariode
             // 
-            this.calendariode.Location = new System.Drawing.Point(568, 92);
+            this.calendariode.Location = new System.Drawing.Point(356, 92);
             this.calendariode.Name = "calendariode";
             this.calendariode.ShowTodayCircle = false;
             this.calendariode.TabIndex = 0;
@@ -202,7 +156,7 @@
             // 
             // calendarioate
             // 
-            this.calendarioate.Location = new System.Drawing.Point(784, 92);
+            this.calendarioate.Location = new System.Drawing.Point(572, 92);
             this.calendarioate.MaxSelectionCount = 1;
             this.calendarioate.MinDate = new System.DateTime(2016, 1, 1, 0, 0, 0, 0);
             this.calendarioate.Name = "calendarioate";
@@ -274,11 +228,30 @@
             // 
             this.printDialog1.UseEXDialog = true;
             // 
+            // ramalconsulta
+            // 
+            this.ramalconsulta.AutoCompleteCustomSource.AddRange(new string[] {
+            "Realizadas",
+            "Atendidas",
+            "Perdidas"});
+            this.ramalconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ramalconsulta.FormattingEnabled = true;
+            this.ramalconsulta.Items.AddRange(new object[] {
+            "Atendidas",
+            "Perdidas",
+            "Realizadas"});
+            this.ramalconsulta.Location = new System.Drawing.Point(818, 63);
+            this.ramalconsulta.Name = "ramalconsulta";
+            this.ramalconsulta.Size = new System.Drawing.Size(95, 24);
+            this.ramalconsulta.TabIndex = 14;
+            this.ramalconsulta.Text = "Selecione...";
+            // 
             // RelatorioChamadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 567);
+            this.Controls.Add(this.ramalconsulta);
             this.Controls.Add(this.imprimerelatorio);
             this.Controls.Add(this.salvarelatorio);
             this.Controls.Add(this.relatoriobuscar);
@@ -290,7 +263,6 @@
             this.Controls.Add(this.labelde);
             this.Controls.Add(this.tipochamada);
             this.Controls.Add(this.labelchamadas);
-            this.Controls.Add(this.ramalconsulta);
             this.Controls.Add(this.labelramal);
             this.Controls.Add(this.conteudorelatorio);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -308,7 +280,6 @@
 
         private System.Windows.Forms.DataGridView conteudorelatorio;
         private System.Windows.Forms.Label labelramal;
-        private System.Windows.Forms.MaskedTextBox ramalconsulta;
         private System.Windows.Forms.Label labelchamadas;
         private System.Windows.Forms.ComboBox tipochamada;
         private System.Windows.Forms.MaskedTextBox dataInicial;
@@ -321,11 +292,8 @@
         private System.Windows.Forms.Button salvarelatorio;
         private System.Windows.Forms.Button imprimerelatorio;
         private System.Drawing.Printing.PrintDocument printrelatorio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn destino;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tempo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn operadoradestino;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cidadedestino;
         private System.Windows.Forms.PrintPreviewDialog previewrelatorio;
         private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Windows.Forms.ComboBox ramalconsulta;
     }
 }

@@ -9,6 +9,7 @@ using System.Threading;
 using System.Windows.Forms;
 using UITimer = System.Windows.Forms.Timer;
 using System.Drawing.Drawing2D;
+using Microsoft.VisualBasic;
 
 // Metro Framework
 using MetroFramework.Forms;
@@ -24,6 +25,7 @@ namespace AssistenteLigacoes
         // Declara classes
         private Ramal ramal;
         private Usuario dados;
+        private bool consulta = false;
         private UITimer verificador;
 
         private void verificador_Tick(object sender, EventArgs e)
@@ -102,6 +104,9 @@ namespace AssistenteLigacoes
         private void FormPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
 
+            // Finaliza thread de atualização de dados
+            verificador.Stop();
+
             // Ao fechar o FormPrincipal, o FormAutentica é restaurado
             anterior.Show();
 
@@ -109,6 +114,11 @@ namespace AssistenteLigacoes
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            // Finaliza thread de atualização de dados
+            verificador.Stop();
+            ramal = null;
+            dados = null;
 
             // Fecha o FormPrincipal
             this.Close();
@@ -125,8 +135,8 @@ namespace AssistenteLigacoes
             if (pergunta == DialogResult.Yes)
             {
 
-                // Aqui vai chamar os metodos de logout e etc
-                //
+                // Finaliza thread de atualização de dados
+                verificador.Stop();
 
                 // Finaliza a aplicação
                 Application.Exit();
@@ -136,13 +146,13 @@ namespace AssistenteLigacoes
 
         private void chamadasRealizadasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            RelatorioChamadas Chamadas = new RelatorioChamadas();
+            RelatorioChamadas Chamadas = new RelatorioChamadas(dados, ramal);
             Chamadas.Show();
         }
 
         private void chamadasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RelatorioChamadas Chamadas = new RelatorioChamadas();
+            RelatorioChamadas Chamadas = new RelatorioChamadas(dados, ramal);
             Chamadas.Show();
         }
 
@@ -150,7 +160,8 @@ namespace AssistenteLigacoes
         {
 
             // Busca ramal do usuário
-            ramal = new Ramal(ramal.prefixo, ramal.numero, dados.id);
+            if (consulta)
+                ramal = new Ramal(ramal.prefixo, ramal.numero, dados.id);
 
             // Se estiver rodando em uma thread, atualiza por meio do Invoker
             if (numerotelefone.InvokeRequired)
@@ -159,7 +170,7 @@ namespace AssistenteLigacoes
                 numerotelefone.BeginInvoke((MethodInvoker)delegate () { numerotelefone.Text = ramal.prefixo.ToString(); });
                 numeroramal.BeginInvoke((MethodInvoker)delegate () { numeroramal.Text = ramal.numero.ToString(); });
                 ramaloperadora.BeginInvoke((MethodInvoker)delegate () { ramaloperadora.Text = ramal.Operadora; });
-                telefonecompleto.BeginInvoke((MethodInvoker)delegate () { telefonecompleto.Text = ramal.prefixoMask + "-" + ramal.numero.ToString(); });
+                telefonecompleto.BeginInvoke((MethodInvoker)delegate () { telefonecompleto.Text = ramal.PrefixoMask + "-" + ramal.numero.ToString(); });
                 ramaltipo.BeginInvoke((MethodInvoker)delegate () { ramaltipo.Text = (ramal.tipo == 2) ? "Fixo" : "Móvel"; });
                 ramalcidade.BeginInvoke((MethodInvoker)delegate () { ramalcidade.Text = ramal.Cidade; });
                 ramalestado.BeginInvoke((MethodInvoker)delegate () { ramalestado.Text = ramal.Uf; });
@@ -177,7 +188,7 @@ namespace AssistenteLigacoes
 
                         case 1:
                             statusramal.Text = "Disponível";
-                            statusramal.ForeColor = Color.LightGreen;
+                            statusramal.ForeColor = Color.Green;
                             break;
 
                         case 2:
@@ -188,6 +199,11 @@ namespace AssistenteLigacoes
                         case 3:
                             statusramal.Text = "Pausado";
                             statusramal.ForeColor = Color.OrangeRed;
+                            break;
+
+                        case 4:
+                            statusramal.Text = "Em Ligação";
+                            statusramal.ForeColor = Color.Gold;
                             break;
 
                         default:
@@ -206,9 +222,12 @@ namespace AssistenteLigacoes
                 foreach (DataRow row in ultima.Rows)
                 {
 
+                    ramal.ultima = int.Parse(row["c_id"].ToString());
                     int tipo = int.Parse(row["tipo"].ToString());
                     iniciochamada.BeginInvoke((MethodInvoker)delegate () { iniciochamada.Text = row["inicio"].ToString(); });
                     fimchamada.BeginInvoke((MethodInvoker)delegate () { fimchamada.Text = row["fim"].ToString(); });
+                    statusligacao.BeginInvoke((MethodInvoker)delegate () { statusligacao.Text = (bool.Parse(row["status"].ToString())) ? "Finalizada" : "Em Andamento"; });
+
                     string telefone = row["destino"].ToString();
                     string pre;
 
@@ -229,28 +248,28 @@ namespace AssistenteLigacoes
                     cidadedestino.BeginInvoke((MethodInvoker)delegate () { cidadedestino.Text = info.Cidade; });
                     estadodestino.BeginInvoke((MethodInvoker)delegate () { estadodestino.Text = info.Uf; });
 
-                    statusligacao.BeginInvoke((MethodInvoker)delegate () {
+                    tipoligacao.BeginInvoke((MethodInvoker)delegate () {
                         switch (tipo)
                         {
 
                             case 0:
-                                statusligacao.Text = "Perdida";
-                                statusligacao.ForeColor = Color.OrangeRed;
+                                tipoligacao.Text = "Perdida";
+                                tipoligacao.ForeColor = Color.OrangeRed;
                                 break;
 
                             case 1:
-                                statusligacao.Text = "Recebida";
-                                statusligacao.ForeColor = Color.SteelBlue;
+                                tipoligacao.Text = "Recebida";
+                                tipoligacao.ForeColor = Color.SteelBlue;
                                 break;
 
                             case 2:
-                                statusligacao.Text = "Realizada";
-                                statusligacao.ForeColor = Color.Green;
+                                tipoligacao.Text = "Realizada";
+                                tipoligacao.ForeColor = Color.Green;
                                 break;
 
                             default:
-                                statusligacao.Text = "Desconhecido";
-                                statusligacao.ForeColor = Color.Gray;
+                                tipoligacao.Text = "Desconhecido";
+                                tipoligacao.ForeColor = Color.Gray;
                                 break;
 
                         }
@@ -267,7 +286,7 @@ namespace AssistenteLigacoes
                 numerotelefone.Text = ramal.prefixo.ToString();
                 numeroramal.Text = ramal.numero.ToString();
                 ramaloperadora.Text = ramal.Operadora;
-                telefonecompleto.Text = ramal.prefixoMask + "-" + ramal.numero.ToString();
+                telefonecompleto.Text = ramal.PrefixoMask + "-" + ramal.numero.ToString();
                 ramaltipo.Text = (ramal.tipo == 2) ? "Fixo" : "Móvel";
                 ramalcidade.Text = ramal.Cidade;
                 ramalestado.Text = ramal.Uf;
@@ -282,7 +301,7 @@ namespace AssistenteLigacoes
 
                     case 1:
                         statusramal.Text = "Disponível";
-                        statusramal.ForeColor = Color.LightGreen;
+                        statusramal.ForeColor = Color.Green;
                         break;
 
                     case 2:
@@ -293,6 +312,11 @@ namespace AssistenteLigacoes
                     case 3:
                         statusramal.Text = "Pausado";
                         statusramal.ForeColor = Color.OrangeRed;
+                        break;
+
+                    case 4:
+                        statusramal.Text = "Em Ligação";
+                        statusramal.ForeColor = Color.Gold;
                         break;
 
                     default:
@@ -309,9 +333,11 @@ namespace AssistenteLigacoes
                 foreach (DataRow row in ultima.Rows)
                 {
 
+                    ramal.ultima = int.Parse(row["c_id"].ToString());
                     int tipo = int.Parse(row["tipo"].ToString());
                     iniciochamada.Text = row["inicio"].ToString();
                     fimchamada.Text = row["fim"].ToString();
+                    statusligacao.Text = (bool.Parse(row["status"].ToString())) ? "Finalizada" : "Em Andamento";
                     string telefone = row["destino"].ToString();
                     string pre;
 
@@ -336,23 +362,23 @@ namespace AssistenteLigacoes
                     {
 
                         case 0:
-                            statusligacao.Text = "Perdida";
-                            statusligacao.ForeColor = Color.OrangeRed;
+                            tipoligacao.Text = "Perdida";
+                            tipoligacao.ForeColor = Color.OrangeRed;
                             break;
 
                         case 1:
-                            statusligacao.Text = "Recebida";
-                            statusligacao.ForeColor = Color.SteelBlue;
+                            tipoligacao.Text = "Recebida";
+                            tipoligacao.ForeColor = Color.SteelBlue;
                             break;
 
                         case 2:
-                            statusligacao.Text = "Realizada";
-                            statusligacao.ForeColor = Color.Green;
+                            tipoligacao.Text = "Realizada";
+                            tipoligacao.ForeColor = Color.Green;
                             break;
 
                         default:
-                            statusligacao.Text = "Desconhecido";
-                            statusligacao.ForeColor = Color.Gray;
+                            tipoligacao.Text = "Desconhecido";
+                            tipoligacao.ForeColor = Color.Gray;
                             break;
 
                     }
@@ -365,6 +391,9 @@ namespace AssistenteLigacoes
 
         private void selecionarramal_Click(object sender, EventArgs e)
         {
+
+            if (comboramal.SelectedItem == null)
+                return;
 
             // Declara os valores necessários
             int prefixo = int.Parse(combotelefone.GetItemText(combotelefone.SelectedItem));
@@ -386,7 +415,20 @@ namespace AssistenteLigacoes
             // Alterando valor das labels
             labellogin.Text = "Ramal autenticado em " + DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToLongTimeString();
 
+            ramal.RegistrarAcesso();
+               
+            // Altera as informações do ramal
             verificaRamal();
+
+            // Exibe opções do ramal no menu
+            alterarStatusToolStripMenuItem.Visible = true;
+            inserirObservaçãoToolStripMenuItem.Visible = true;
+            toolStripMenuItem5.Visible = true;
+            chamadasToolStripMenuItem.Visible = true;
+            toolStripMenuItem1.Visible = true;
+
+            // Informa que a consulta inicial já foi realizada
+            consulta = true;
 
             // Animação de loading
             selecionarramal.Image = Properties.Resources.accept;
@@ -404,7 +446,7 @@ namespace AssistenteLigacoes
 
             // Busca ramais do usuário
             Ramal ramal = new Ramal(prefixo, 0, dados.id);
-            DataTable busca = ramal.BuscaRamais(dados.id);
+            DataTable busca = ramal.BuscaRamais(dados.id, false);
 
             // Altera as propriedades dos itens
             comboramal.Visible = true;
@@ -445,6 +487,66 @@ namespace AssistenteLigacoes
         private void comboramal_DropDown(object sender, EventArgs e)
         {
             comboramal.SelectedIndex = -1;
+        }
+
+        private void disponivelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if(ramal.AtualizarStatus(1))
+                MessageBox.Show("Seu status foi alterado com sucesso!", "Status alterado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            else
+                MessageBox.Show("Não foi possível alterar seus status. Por favor, tente novamente...", "Encontramos um problema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+
+        private void ausenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (ramal.AtualizarStatus(2))
+                MessageBox.Show("Seu status foi alterado com sucesso!", "Status alterado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            else
+                MessageBox.Show("Não foi possível alterar seus status. Por favor, tente novamente...", "Encontramos um problema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+
+        private void pausaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (ramal.AtualizarStatus(3))
+                MessageBox.Show("Seu status foi alterado com sucesso!", "Status alterado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            else
+                MessageBox.Show("Não foi possível alterar seus status. Por favor, tente novamente...", "Encontramos um problema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+
+        private void desligarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (ramal.AtualizarStatus(0))
+                MessageBox.Show("Seu ramal foi desligado!", "Ramal desligado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            else
+                MessageBox.Show("Não foi possível desligar seu ramal. Por favor, tente novamente...", "Encontramos um problema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+
+        private void inserirObservaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            const int approxInputBoxWidth = 370;
+            const int approxInputBoxHeight = 158;
+
+            int left = this.Left + (this.Width / 2) - (approxInputBoxWidth / 2);
+            left = left < 0 ? 0 : left;
+            int top = this.Top + (this.Height / 2) - (approxInputBoxHeight / 2);
+            top = top < 0 ? 0 : top;
+
+            string obs = Interaction.InputBox("Insira uma breve observação sobre a chamada em andamento ou finalizada anteriormente. Você não poderá editar essa observação ou inserir uma observação de outra chamada.", "Observação", "", left, top);
+
+            if (ramal.InserirObservacao(obs))
+                MessageBox.Show("Observação registrada com sucesso!", "Observação salva", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            else
+                MessageBox.Show("Não foi possível registrar sua observação. Por favor, tente novamente...", "Encontramos um problema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
         }
     }
 }

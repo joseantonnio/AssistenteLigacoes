@@ -36,8 +36,16 @@ namespace AssistenteLigacoes
         bool bNewPage = false; // Informa se é uma nova página que está sendo impressa
         int iHeaderHeight = 0; //  Pega a altura do cabeçalho
 
-        public RelatorioChamadas()
+        Usuario dados;
+        Ramal ramal;
+
+        public RelatorioChamadas(Usuario u, Ramal r)
         {
+
+            // Armazena os dados do usuaário e ramal
+            dados = u;
+            ramal = r;   
+
             // Inicializa o RelatorioChamadas
             InitializeComponent();
         }
@@ -66,6 +74,31 @@ namespace AssistenteLigacoes
 
         private void RelatorioChamadas_Load(object sender, EventArgs e)
         {
+
+            // Se for usuário normal, oculta a opção ramal
+            if (!dados.admin)
+            {
+                ramalconsulta.Items.Add(ramal.numero);
+            } else
+            {
+
+                // Busca todos ramais
+                System.Data.DataTable busca = ramal.BuscaRamais(0, true);
+
+                // Limpa o combo
+                ramalconsulta.Items.Clear();
+
+                // Percorre os resultados
+                foreach (DataRow row in busca.Rows)
+                {
+
+                    bool ativo = bool.Parse(row["ativo"].ToString());
+
+                    if (ativo)
+                        ramalconsulta.Items.Add(row["numero"]);
+
+                }
+            }
 
         }
 
@@ -129,18 +162,11 @@ namespace AssistenteLigacoes
         {
 
             // Verifica se as datas não são válidas
-            if (!verificaData(dataInicial.Text, true) || !verificaData(dataFinal.Text, true))
+            if (!verificaData(dataInicial.Text, true) || !verificaData(dataFinal.Text, false))
             {
                 MessageBox.Show("As datas informadas não são válidas!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dataInicial.Text = "";
                 dataFinal.Text = "";
-                return;
-            }
-
-            // Verifica se o ramal está em branco ou incorreto
-            if (ramalconsulta.Text == "" || ramalconsulta.TextLength != 4)
-            {
-                MessageBox.Show("Preencha o ramal corretamente!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -163,6 +189,23 @@ namespace AssistenteLigacoes
                 MessageBox.Show("A data final não pode ser menor que a data inicial!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            string tipo = tipochamada.SelectedIndex.ToString();
+            string numero = ramalconsulta.GetItemText(ramalconsulta.SelectedItem);
+
+            // Busca os dados selecionados
+            conteudorelatorio.DataSource = ramal.BuscaLigacoes(false, numero, tipo, inicial.ToString("yyyy-MM-dd HH:mm:ss"), final.ToString("yyyy-MM-dd HH:mm:ss"));
+
+            // Renomeia colunas
+            conteudorelatorio.Columns[0].HeaderText = "ID";
+            conteudorelatorio.Columns[1].HeaderText = "Inicio";
+            conteudorelatorio.Columns[2].HeaderText = "Fim";
+            conteudorelatorio.Columns[3].HeaderText = "Finalizada";
+            conteudorelatorio.Columns[4].HeaderText = "Telefone";
+            conteudorelatorio.Columns[5].HeaderText = "Ramal";
+            conteudorelatorio.Columns[6].HeaderText = "Tipo";
+            conteudorelatorio.Columns[7].HeaderText = "Destino";
+            conteudorelatorio.Columns[8].HeaderText = "Observações";
 
         }
 

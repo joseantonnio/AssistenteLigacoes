@@ -14,7 +14,7 @@ using MySql.Data.MySqlClient;
 
 namespace AssistenteLigacoes
 {
-    class Telefone
+    public class Telefone
     {
 
         public int prefixo;
