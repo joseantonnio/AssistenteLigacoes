@@ -46,6 +46,7 @@
             this.previewrelatorio = new System.Windows.Forms.PrintPreviewDialog();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.ramalconsulta = new System.Windows.Forms.ComboBox();
+            this.atevazio = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.conteudorelatorio)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +70,7 @@
             // 
             this.labelramal.AutoSize = true;
             this.labelramal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelramal.Location = new System.Drawing.Point(760, 66);
+            this.labelramal.Location = new System.Drawing.Point(814, 66);
             this.labelramal.Name = "labelramal";
             this.labelramal.Size = new System.Drawing.Size(52, 17);
             this.labelramal.TabIndex = 1;
@@ -87,15 +88,11 @@
             // 
             // tipochamada
             // 
-            this.tipochamada.AutoCompleteCustomSource.AddRange(new string[] {
-            "Perdidas",
-            "Recebidas",
-            "Realizadas"});
             this.tipochamada.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tipochamada.FormattingEnabled = true;
             this.tipochamada.Items.AddRange(new object[] {
-            "Atendidas",
             "Perdidas",
+            "Recebidas",
             "Realizadas"});
             this.tipochamada.Location = new System.Drawing.Point(108, 63);
             this.tipochamada.Name = "tipochamada";
@@ -240,17 +237,28 @@
             "Atendidas",
             "Perdidas",
             "Realizadas"});
-            this.ramalconsulta.Location = new System.Drawing.Point(818, 63);
+            this.ramalconsulta.Location = new System.Drawing.Point(872, 63);
             this.ramalconsulta.Name = "ramalconsulta";
-            this.ramalconsulta.Size = new System.Drawing.Size(95, 24);
+            this.ramalconsulta.Size = new System.Drawing.Size(69, 24);
             this.ramalconsulta.TabIndex = 14;
-            this.ramalconsulta.Text = "Selecione...";
+            // 
+            // atevazio
+            // 
+            this.atevazio.AutoSize = true;
+            this.atevazio.Location = new System.Drawing.Point(760, 67);
+            this.atevazio.Name = "atevazio";
+            this.atevazio.Size = new System.Drawing.Size(48, 17);
+            this.atevazio.TabIndex = 15;
+            this.atevazio.Text = "Nulo";
+            this.atevazio.UseVisualStyleBackColor = true;
+            this.atevazio.CheckStateChanged += new System.EventHandler(this.atevazio_CheckStateChanged);
             // 
             // RelatorioChamadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 567);
+            this.Controls.Add(this.atevazio);
             this.Controls.Add(this.ramalconsulta);
             this.Controls.Add(this.imprimerelatorio);
             this.Controls.Add(this.salvarelatorio);
@@ -295,5 +303,6 @@
         private System.Windows.Forms.PrintPreviewDialog previewrelatorio;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.ComboBox ramalconsulta;
+        private System.Windows.Forms.CheckBox atevazio;
     }
 }

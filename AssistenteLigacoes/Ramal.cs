@@ -21,12 +21,14 @@ namespace AssistenteLigacoes
         public Ramal(int prefixo, int sufixo, int id) : base (prefixo)
         {
 
+            Clear();
+
             this.numero = sufixo;
             this.status = 0;
             this.ativo = false;
             this.responsavel = 0;
 
-            DataTable busca = conexao.busca("SELECT * FROM ramais WHERE responsavel = " + id + " AND prefixo = " + prefixo + " AND numero = " + numero + " LIMIT 1", "ramais", conexao);
+            DataTable busca = conexao.busca("SELECT * FROM ramais WHERE prefixo = '" + prefixo + "' AND numero = '" + numero + "'", "busca", conexao);
 
             // Percorre os resultados
             foreach (DataRow row in busca.Rows)
@@ -34,7 +36,7 @@ namespace AssistenteLigacoes
 
                 this.status = int.Parse(row["status"].ToString());
                 this.ativo = bool.Parse(row["ativo"].ToString());
-                this.responsavel = id;
+                this.responsavel = int.Parse(row["responsavel"].ToString());
 
             }
 
@@ -93,13 +95,13 @@ namespace AssistenteLigacoes
                         sql += " AND tipo = " + tipo;
 
                     if (de != "")
-                        sql += " AND inicio > DATE('" + de + "')";
+                        sql += " AND inicio > '" + de + "'";
 
                     if (de != "" && ate != "")
                         sql += " AND";
 
                     if (ate != "")
-                        sql += " fim < DATE('" + ate + "')";
+                        sql += " inicio < '" + ate + "'";
 
                 }
 
@@ -107,19 +109,6 @@ namespace AssistenteLigacoes
                 
 
             return conexao.busca(sql, "ramais", conexao);
-
-        }
-
-        //Método Busca Origem 
-        public void BuscaOrigem()
-        {
-
-        }
-
-
-        //Método Busca Destino
-        public void BuscaDestino()
-        {
 
         }
 
@@ -144,6 +133,57 @@ namespace AssistenteLigacoes
 
         }
 
+        public bool InserirRamal(string t, string n, bool a, int r)
+        {
+
+            try
+            {
+                conexao.comando("INSERT INTO ramais (numero, prefixo, status, ativo, responsavel) VALUES (" + n + ", " + t + ", 0, " + a + ", " + r + ")").ExecuteNonQuery();
+            }
+            catch (MySqlException ex)
+            {
+                return false;
+            }
+
+            return true;
+
+
+        }
+
+        public bool AtualizarRamal(string t, string n, bool a, int r)
+        {
+
+            try
+            {
+                conexao.comando("UPDATE ramais SET ativo = " + a + ", responsavel = " + r + " WHERE prefixo = "+t+" AND numero = "+n).ExecuteNonQuery();
+            }
+            catch (MySqlException ex)
+            {
+                return false;
+            }
+
+            return true;
+
+
+        }
+
+        public bool ExcluirRamal(string t, string n)
+        {
+
+            try
+            {
+                conexao.comando("DELETE FROM ramais WHERE prefixo = " + t + " AND numero = " + n).ExecuteNonQuery();
+            }
+            catch (MySqlException ex)
+            {
+                return false;
+            }
+
+            return true;
+
+
+        }
+
         public bool InserirObservacao(string observacao)
         {
 
@@ -158,6 +198,17 @@ namespace AssistenteLigacoes
             }
 
         }
+
+        public void Clear()
+        {
+
+            this.numero = 0;
+            this.status = 0;
+            this.ativo = false;
+            this.responsavel = 0;
+            this.ultima = 0;
+
+    }
 
     }
 }

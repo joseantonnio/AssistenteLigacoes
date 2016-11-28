@@ -161,14 +161,64 @@ namespace AssistenteLigacoes
         private void relatoriobuscar_Click(object sender, EventArgs e)
         {
 
+            // Declara variaveis
+            string inicial = "";
+            string final = "";
+            string tipo = tipochamada.SelectedIndex.ToString();
+            string numero = ramalconsulta.GetItemText(ramalconsulta.SelectedItem);
+
+            if (numero == "")
+            {
+                MessageBox.Show("Selecione um ramal para buscar o relatório!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             // Verifica se as datas não são válidas
-            if (!verificaData(dataInicial.Text, true) || !verificaData(dataFinal.Text, false))
+            if (!verificaData(dataInicial.Text, true))
             {
                 MessageBox.Show("As datas informadas não são válidas!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dataInicial.Text = "";
                 dataFinal.Text = "";
                 return;
             }
+
+            if (!atevazio.Checked)
+            {
+
+                if (!verificaData(dataFinal.Text, true))
+                {
+                    MessageBox.Show("As datas informadas não são válidas!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    dataInicial.Text = "";
+                    dataFinal.Text = "";
+                    return;
+                }
+                else
+                {
+
+                    // Converte as datas para DateTime
+                    inicial = DateTime.Parse(dataInicial.Text).ToString("yyyy-MM-dd HH:mm:ss");
+                    final = DateTime.Parse(dataFinal.Text).ToString("yyyy-MM-dd HH:mm:ss");
+
+                    // Compara as datas
+                    int compara = DateTime.Compare(DateTime.Parse(inicial), DateTime.Parse(final));
+
+                    if (compara > 0)
+                    {
+                        MessageBox.Show("A data final não pode ser menor que a data inicial!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                }
+
+            }
+            else
+            {
+
+                // Converte as datas para DateTime
+                inicial = DateTime.Parse(dataInicial.Text).ToString("yyyy-MM-dd HH:mm:ss");
+
+            }
+
 
             // Verifica se o tipo de relatório foi selecionado
             if (tipochamada.SelectedItem == null)
@@ -177,24 +227,8 @@ namespace AssistenteLigacoes
                 return;
             }
 
-            // Converte as datas para DateTime
-            DateTime inicial = DateTime.Parse(dataInicial.Text);
-            DateTime final = DateTime.Parse(dataFinal.Text);
-
-            // Compara as datas
-            int compara = DateTime.Compare(inicial, final);
-
-            if (compara > 0)
-            {
-                MessageBox.Show("A data final não pode ser menor que a data inicial!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            string tipo = tipochamada.SelectedIndex.ToString();
-            string numero = ramalconsulta.GetItemText(ramalconsulta.SelectedItem);
-
             // Busca os dados selecionados
-            conteudorelatorio.DataSource = ramal.BuscaLigacoes(false, numero, tipo, inicial.ToString("yyyy-MM-dd HH:mm:ss"), final.ToString("yyyy-MM-dd HH:mm:ss"));
+            conteudorelatorio.DataSource = ramal.BuscaLigacoes(false, numero, tipo, inicial, final);
 
             // Renomeia colunas
             conteudorelatorio.Columns[0].HeaderText = "ID";
@@ -270,7 +304,7 @@ namespace AssistenteLigacoes
         private void salvarelatorio_Click(object sender, EventArgs e)
         {
             // Verifica se possui alguma linha no relatório além do cabeçalho
-            if (conteudorelatorio.Rows.Count > 1)
+            if (conteudorelatorio.Rows.Count > 0)
             {
 
                 // Cria o objeto do Excel
@@ -290,7 +324,7 @@ namespace AssistenteLigacoes
                     }
 
                     // Realiza um laço duplo no conteúdo
-                    for (int i = 0; i < conteudorelatorio.Rows.Count - 1; i++)
+                    for (int i = 0; i < conteudorelatorio.Rows.Count; i++)
                     {
                         for (int j = 0; j < conteudorelatorio.Columns.Count; j++)
                         {
@@ -471,6 +505,20 @@ namespace AssistenteLigacoes
 
         }
 
+        private void atevazio_CheckStateChanged(object sender, EventArgs e)
+        {
+
+            if (atevazio.Checked)
+            {
+                dataFinal.Enabled = false;
+                dataFinal.Text = "";
+            }
+            else
+            {
+                dataFinal.Enabled = true;
+            }
+
+        }
     }
 
 }

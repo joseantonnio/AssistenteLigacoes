@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
+using System.Data;
 
 // Referencia MySQL
 using MySql.Data.MySqlClient;
@@ -75,6 +76,14 @@ namespace AssistenteLigacoes
         public MemoryStream Avatar { set { avatar = value; } get { return avatar; } }
 
         public bool Autenticado { set { autenticado = value; } get { return autenticado; } }
+
+        public DataTable BuscarUsuarios()
+        {
+            if (admin)
+                return conexao.busca("SELECT * FROM usuarios ORDER BY u_id ASC", "usuarios", conexao);
+            else
+                return conexao.busca("SELECT * FROM usuarios WHERE u_id = "+id, "usuarios", conexao);
+        }
 
         public static string gerarSHA256(string texto)
         {

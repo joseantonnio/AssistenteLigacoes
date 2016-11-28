@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 26-Nov-2016 às 17:50
+-- Data de Criação: 28-Nov-2016 às 00:26
 -- Versão do servidor: 5.5.53-0ubuntu0.14.04.1
 -- versão do PHP: 5.5.9-1ubuntu4.20
 
@@ -32,16 +32,17 @@ DROP TABLE IF EXISTS `chamadas`;
 CREATE TABLE IF NOT EXISTS `chamadas` (
   `c_id` int(11) NOT NULL AUTO_INCREMENT,
   `inicio` datetime NOT NULL,
-  `fim` datetime NOT NULL,
-  `status` smallint(1) NOT NULL,
+  `fim` datetime DEFAULT NULL,
+  `status` tinyint(1) NOT NULL,
   `telefone` varchar(7) NOT NULL,
   `ramal` varchar(7) NOT NULL,
   `tipo` smallint(1) NOT NULL,
   `destino` varchar(12) NOT NULL,
+  `observacoes` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`c_id`),
   KEY `FK_Telefone_Chamada_idx` (`telefone`),
   KEY `FK_Ramal_Chamada` (`ramal`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Truncate table before insert `chamadas`
@@ -52,9 +53,17 @@ TRUNCATE TABLE `chamadas`;
 -- Extraindo dados da tabela `chamadas`
 --
 
-INSERT INTO `chamadas` (`c_id`, `inicio`, `fim`, `status`, `telefone`, `ramal`, `tipo`, `destino`) VALUES
-(1, '2016-10-20 11:32:01', '2016-10-20 11:35:42', 4, '163032', '5025', 0, '1633065652'),
-(2, '2016-11-26 09:08:11', '2016-11-26 09:14:37', 4, '163032', '5025', 2, '1633522022');
+INSERT INTO `chamadas` (`c_id`, `inicio`, `fim`, `status`, `telefone`, `ramal`, `tipo`, `destino`, `observacoes`) VALUES
+(1, '2016-10-20 11:32:01', '2016-10-20 11:35:42', 1, '163032', '5025', 0, '1633065652', NULL),
+(2, '2016-11-26 09:08:11', '2016-11-26 09:14:37', 1, '163032', '5025', 1, '1633522022', NULL),
+(3, '2016-11-26 18:04:52', '2016-11-26 18:17:38', 1, '163032', '5025', 2, '1633612251', NULL),
+(4, '2016-11-26 21:47:11', '2016-11-26 21:55:16', 1, '163032', '5025', 1, '1633721172', NULL),
+(5, '2016-11-27 12:28:24', '2016-11-27 12:29:01', 1, '163032', '5025', 1, '1621071125', 'Chamada caiu'),
+(6, '2016-11-27 12:29:39', '2016-11-27 12:42:11', 1, '163032', '5025', 1, '1621071125', ''),
+(7, '2016-11-27 01:22:11', '2016-11-27 01:22:57', 1, '163032', '5025', 0, '1631061114', ''),
+(8, '2016-11-23 09:27:20', '2016-11-23 09:41:07', 1, '163032', '5022', 1, '1633712257', NULL),
+(9, '2016-11-17 17:30:24', '2016-11-17 18:55:02', 1, '163032', '5022', 0, '1621091411', NULL),
+(10, '2016-11-26 10:38:18', '2016-11-26 11:05:39', 1, '163032', '5022', 2, '1622019856', NULL);
 
 -- --------------------------------------------------------
 
@@ -69,6 +78,7 @@ CREATE TABLE IF NOT EXISTS `ramais` (
   `status` smallint(1) NOT NULL DEFAULT '0',
   `ativo` tinyint(1) NOT NULL DEFAULT '0',
   `responsavel` int(11) NOT NULL,
+  `ultimo_acesso` datetime DEFAULT NULL,
   PRIMARY KEY (`numero`),
   UNIQUE KEY `numero_UNIQUE` (`numero`),
   UNIQUE KEY `numerocompleto` (`prefixo`,`numero`),
@@ -85,15 +95,11 @@ TRUNCATE TABLE `ramais`;
 -- Extraindo dados da tabela `ramais`
 --
 
-INSERT INTO `ramais` (`numero`, `prefixo`, `status`, `ativo`, `responsavel`) VALUES
-('1001', '163800', 0, 1, 1),
-('1002', '163800', 0, 1, 2),
-('1125', '167003', 0, 1, 1),
-('1128', '167003', 0, 1, 1),
-('1132', '167003', 0, 1, 2),
-('5022', '163032', 0, 1, 2),
-('5023', '163032', 0, 1, 2),
-('5025', '163032', 0, 1, 1);
+INSERT INTO `ramais` (`numero`, `prefixo`, `status`, `ativo`, `responsavel`, `ultimo_acesso`) VALUES
+('1001', '163800', 0, 1, 1, '2016-11-27 22:23:53'),
+('1002', '163800', 0, 0, 2, NULL),
+('5022', '163032', 0, 1, 2, '2016-11-27 22:18:57'),
+('5025', '163032', 1, 1, 1, '2016-11-27 22:22:17');
 
 -- --------------------------------------------------------
 
@@ -119,8 +125,7 @@ TRUNCATE TABLE `telefones`;
 
 INSERT INTO `telefones` (`prefixo`) VALUES
 ('163032'),
-('163800'),
-('167003');
+('163800');
 
 -- --------------------------------------------------------
 

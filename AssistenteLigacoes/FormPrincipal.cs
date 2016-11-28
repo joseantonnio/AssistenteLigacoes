@@ -403,6 +403,24 @@ namespace AssistenteLigacoes
             // Animação de loading
             selecionarramal.Image = Properties.Resources.loading;
 
+            // Limpa os campos
+            numerotelefone.Text = "";
+            numeroramal.Text = "";
+            ramaloperadora.Text = "";
+            telefonecompleto.Text = "";
+            ramaltipo.Text = "";
+            ramalcidade.Text = "";
+            ramalestado.Text = "";
+            statusramal.Text = "";
+            iniciochamada.Text = "";
+            fimchamada.Text = "";
+            statusligacao.Text = "";
+            telefoneligacao.Text = "";
+            operadoradestino.Text = "";
+            cidadedestino.Text = "";
+            estadodestino.Text = "";
+            tipoligacao.Text = "";
+
             // Busca ramal do usuário
             ramal = new Ramal(prefixo, selecionado, dados.id);
 
@@ -546,6 +564,20 @@ namespace AssistenteLigacoes
                 MessageBox.Show("Observação registrada com sucesso!", "Observação salva", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             else
                 MessageBox.Show("Não foi possível registrar sua observação. Por favor, tente novamente...", "Encontramos um problema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+
+        private void inserirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRamal InserirRamal = new FormRamal(dados);
+            InserirRamal.Show();
+        }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            FormRamal EditarRamal = new FormRamal(dados, true);
+            EditarRamal.Show();
 
         }
     }
